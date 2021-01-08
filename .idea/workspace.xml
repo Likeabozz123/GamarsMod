@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67448253-0ad3-4e12-961f-0b8716d8204b" name="Default Changelist" comment="" />
+    <list default="true" id="67448253-0ad3-4e12-961f-0b8716d8204b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +67,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="discord-application" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
@@ -128,25 +133,33 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="663" y="343" key="#Notifications" timestamp="1610132244485">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="663" y="343" key="#Notifications/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1610132244485" />
     <state x="414" y="174" width="1092" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610128690151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" width="1092" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1610128690151" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610129254798">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610131397067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1610129254798" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1610129254798">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1610131397067" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1610131397067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1610129254798" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1610129254798">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1610131397067" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1610131397067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1610129254798" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1610129254798">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1610131397067" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1610131397067">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1610129254798" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1610131397067" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1610132892462">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1680.21.1680.1010@0.0.1920.1040" timestamp="1610132892462" />
   </component>
 </project>

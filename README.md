@@ -1,1 +1,1 @@
-# gamars-mod
+# GamarsMod
