@@ -74,4 +74,10 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
     }
+
+    idea {
+        module {
+            inheritOutputDirs = true
+        }
+    }
 }
