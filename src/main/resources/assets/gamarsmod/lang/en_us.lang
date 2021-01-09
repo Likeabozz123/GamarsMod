@@ -1,5 +1,5 @@
 //ITEMS
-item.cock.name=Cock
+item.test_item.name=Test Item
 
 //BLOCKS
 tile.test_block.name=Test Block
