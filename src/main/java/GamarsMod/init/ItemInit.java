@@ -14,5 +14,6 @@ public class ItemInit {
 
     //ITEMS
     public static final Item TEST_ITEM = new ItemBase("test_item");
-
+    public static final Item TEST_MATERIAL = new ItemBase("test_material");
+    public static final Item TEST_FOOD = new ItemBase("test_food");
 }
