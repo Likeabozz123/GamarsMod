@@ -26,7 +26,7 @@ public class ExampleMod
     public void init(FMLInitializationEvent event)
     {
         // some example code
-        System.out.println("ASNPIJFBEFUBFEJBFHJFBSJHBFFHBFSIHSBFIHSBFSIJFBSIFSBFISBFSHFBSFHBFHBFHEFBFB");
+        System.out.println("Daryan is quite cool!");
         logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 }
