@@ -8,7 +8,9 @@ import java.util.List;
 
 public class ItemInit {
 
+                        //type of variable  //makes what the variable is equal to
     public static final List<Item> ITEMS = new ArrayList<Item>();
+                                   //name of variable
 
     public static final Item COCK = new ItemBase("cock");
 
