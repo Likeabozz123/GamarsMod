@@ -1,5 +1,8 @@
 //ITEMS
 item.test_item.name=Test Item
+item.test_material.name=Test Material
+item.test_food.name=Test Food
 
 //BLOCKS
 tile.test_block.name=Test Block
+tile.test_ore.name=Test Ore
