@@ -1,6 +1,8 @@
 package GamarsMod;
 
+import GamarsMod.proxy.CommonProxy;
 import GamarsMod.util.Reference;
+import GamarsMod.util.handlers.RegistryHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -18,21 +20,21 @@ public class Main {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-
+        RegistryHandler.preInitRegisteries();
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
-
+        RegistryHandler.initRegisteries();
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
-
+        RegistryHandler.postInitRegister();
     }
 
     @Mod.EventHandler
     public void serverInit(FMLServerStartingEvent event) {
-
+        RegistryHandler.serverRegisteries();
     }
 }
