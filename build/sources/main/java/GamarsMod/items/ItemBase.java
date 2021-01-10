@@ -10,7 +10,7 @@ public class ItemBase extends Item {
     public ItemBase(String name) {
         setRegistryName(name);
         setUnlocalizedName(name);
-        setCreativeTab(CreativeTabs.COMBAT);
+        setCreativeTab(CreativeTabs.MATERIALS);
 
         ItemInit.ITEMS.add(this);
     }

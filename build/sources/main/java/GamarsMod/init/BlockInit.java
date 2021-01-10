@@ -13,5 +13,9 @@ public class BlockInit {
 
     //BLOCKS
     public static final Block TEST_BLOCK = new BlockBase("test_block", Material.IRON, 8.0F, 8.0F, 2, "pickaxe");
+    public static final Block TEST_ORE = new BlockBase("test_ore", Material.ROCK, 25.0F, 50.0F, 3, "pickaxe");
+    public static final Block TEST_TEST_BLOCK = new BlockBase("test_test_block", Material.WOOD, 5.0F, 50.0F, 1, "axe");
+    //ROBERT BLOCK
+    public static final Block PACKED_WOOL = new BlockBase("packed_wool", Material.SAND, 15.25F, 100.0F, 2, "axe");
 
 }
