@@ -5,6 +5,7 @@ item.test_food.name=Test Food
 item.test_test.name=Test Test
 item.bonk_hammer.name=Bonk Hammer
 item.netherite_ingot.name=Netherite Ingot
+item.netherite_scrap.name= Netherite Scrap
 
 //ARMOUR
 item.test_helmet.name=Test Helmet
@@ -26,6 +27,7 @@ tile.test_ore.name=Test Ore
 tile.test_test_block.name=Test Test Block
 tile.packed_wool.name=Packed Wool
 tile.ancient_debris.name=Ancient Debris
+tile.netherite_block.name=Netherite Block
 
 //GUI
 itemGroup.gamarstab=Gamars Tab

@@ -18,4 +18,6 @@ public class BlockInit {
     //ROBERT BLOCK
     public static final Block PACKED_WOOL = new BlockBase("packed_wool", Material.SAND, 15.25F, 100.0F, 2, "axe");
     public static final Block ANCIENT_DEBRIS = new BlockBase("ancient_debris", Material.ROCK, 30.0F, 50.0F, 3, "pickaxe");
+    public static final Block NETHERITE_BLOCK = new BlockBase("netherite_block", Material.ROCK, 15.0F, 50.0F, 3, "pickaxe");
 }
+

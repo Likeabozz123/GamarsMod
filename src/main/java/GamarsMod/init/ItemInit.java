@@ -51,5 +51,6 @@ public class ItemInit {
 
     //ANGELO ITEM
     public static final Item NETHERITE_INGOT = new ItemBase("netherite_ingot");
+    public static final Item NETHERITE_SCRAP = new ItemBase("netherite_scrap");
 
 }
