@@ -1,0 +1,10 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [{
+			"item": "gamarsmod:test_block"
+		}
+	],
+	"result": {
+		"item": "gamarsmod:test_material"
+	}
+}

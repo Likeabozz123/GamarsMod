@@ -1,6 +1,7 @@
 package GamarsMod;
 
 import GamarsMod.proxy.CommonProxy;
+import GamarsMod.recipes.CraftingRecipes;
 import GamarsMod.tabs.GamarsTab;
 import GamarsMod.util.Reference;
 import GamarsMod.util.handlers.RegistryHandler;
@@ -31,6 +32,7 @@ public class Main {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         RegistryHandler.initRegisteries();
+        CraftingRecipes.init();
     }
 
     @Mod.EventHandler
