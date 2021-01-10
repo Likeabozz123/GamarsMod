@@ -11,7 +11,7 @@ public class ArmourBase extends ItemArmor {
         super(materialIn, renderIndexIn, equipmentSlotIn);
         setRegistryName(name);
         setUnlocalizedName(name);
-        setCreativeTab(CreativeTabs.MATERIALS);
+        setCreativeTab(CreativeTabs.COMBAT);
 
         ItemInit.ITEMS.add(this);
 
