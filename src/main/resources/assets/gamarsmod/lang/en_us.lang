@@ -13,6 +13,10 @@ item.test_chestplate.name=Test Chestplate
 item.test_leggings.name=Test Leggings
 item.test_boots.name=Test Boots
 item.reinforced_woolin_pants.name=Reinforced Woolin Pants
+item.netherite_helmet.name=Netherite Helmet
+item.netherite_chestplate.name=Netherite Chestplate
+item.netherite_leggings.name=Netherite Leggings
+item.netherite_boots.name=Netherite Boots
 
 //TOOLS
 item.test_sword.name=Test Sword
@@ -20,6 +24,11 @@ item.test_pickaxe.name=Test Pickaxe
 item.test_axe.name=Test Axe
 item.test_shovel.name=Test Shovel
 item.test_hoe.name=Test Hoe
+item.netherite_sword.name=Netherite Sword
+item.netherite_axe.name=Netherite Axe
+item.netherite_pickaxe.name=Netherite Pickaxe
+item.netherite_shovel.name=Netherite Shovel
+item.netherite_hoe.name=Netherite Hoe
 
 //BLOCKS
 tile.test_block.name=Test Block
