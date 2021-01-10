@@ -23,7 +23,7 @@ public class ItemInit {
     public static final Item TEST_ITEM = new ItemBase("test_item");
     public static final Item TEST_MATERIAL = new ItemBase("test_material");
     public static final Item TEST_FOOD = new ItemBase("test_food");
-    public static final Item TEST_TEST = new ItemBase("test_test");
+    // public static final Item TEST_TEST = new ItemBase("test_test");
 
     //MATERIALS
     public static final Item.ToolMaterial TEST_TOOL = EnumHelper.addToolMaterial("test_cool", 3, 1561, 8.0F, 3.0F, 10);

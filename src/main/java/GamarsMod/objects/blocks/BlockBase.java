@@ -1,5 +1,6 @@
 package GamarsMod.objects.blocks;
 
+import GamarsMod.Main;
 import GamarsMod.init.BlockInit;
 import GamarsMod.init.ItemInit;
 import net.minecraft.block.Block;
@@ -16,7 +17,7 @@ public class BlockBase extends Block {
         setHardness(hardness);
         setResistance(resistance);
         setHarvestLevel(tool, miningLevel);
-        setCreativeTab(CreativeTabs.MATERIALS);
+        setCreativeTab(Main.gamarsTab);
 
         BlockInit.BLOCKS.add(this);
         ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

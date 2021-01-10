@@ -1,8 +1,10 @@
 package GamarsMod;
 
 import GamarsMod.proxy.CommonProxy;
+import GamarsMod.tabs.GamarsTab;
 import GamarsMod.util.Reference;
 import GamarsMod.util.handlers.RegistryHandler;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -14,6 +16,9 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 public class Main {
     @Mod.Instance
     public static Main instance;
+
+    // Intializing Modded in Creative Tabs
+    public static final CreativeTabs gamarsTab = new GamarsTab("gamarsmod");
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;

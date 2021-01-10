@@ -1,5 +1,6 @@
 package GamarsMod.objects.tools;
 
+import GamarsMod.Main;
 import GamarsMod.init.ItemInit;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemHoe;
@@ -10,7 +11,7 @@ public class ToolHoe extends ItemHoe {
         super(material);
         setRegistryName(name);
         setUnlocalizedName(name);
-        setCreativeTab(CreativeTabs.TOOLS);
+        setCreativeTab(Main.gamarsTab);
 
         ItemInit.ITEMS.add(this);
     }

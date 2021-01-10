@@ -1,5 +1,6 @@
 package GamarsMod.objects.armour;
 
+import GamarsMod.Main;
 import GamarsMod.init.ItemInit;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -11,7 +12,7 @@ public class ArmourBase extends ItemArmor {
         super(materialIn, renderIndexIn, equipmentSlotIn);
         setRegistryName(name);
         setUnlocalizedName(name);
-        setCreativeTab(CreativeTabs.COMBAT);
+        setCreativeTab(Main.gamarsTab);
 
         ItemInit.ITEMS.add(this);
 
