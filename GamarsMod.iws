@@ -23,10 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efcc044e-45c2-4f94-b3b1-44260d64ad58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GamarsMod.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/GamarsMod.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GamarsMod.iws" beforeDir="false" afterPath="$PROJECT_DIR$/GamarsMod.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GamarsMod/init/ItemInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GamarsMod/init/ItemInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/gamarsmod/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/gamarsmod/lang/en_us.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/gamarsmod/textures/models/armor/reinforced_woolin_layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/gamarsmod/textures/models/armor/reinforced_woolin_layer_2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +119,13 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/gamarsmod/models/item" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xxbat\Desktop\GamarsMod\src\main\resources\assets\gamarsmod\models\item" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
     <configuration default="true" factoryName="Applet" type="Applet">
