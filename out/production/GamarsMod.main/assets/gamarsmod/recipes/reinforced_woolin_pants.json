@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "###",
+        "#!#",
+        "###"
+    ],
+    
+    "key":
+    {
+        "#":
+        {
+            "item": "gamarsmod:packed_wool"
+        },
+        "!":
+        {
+            "item": "minecraft:leather_leggings"
+        }
+    },
+    
+    "result":
+    {
+        "item":  "gamarsmod:reinforced_woolin_pants",
+        "count": 1
+    }
+}

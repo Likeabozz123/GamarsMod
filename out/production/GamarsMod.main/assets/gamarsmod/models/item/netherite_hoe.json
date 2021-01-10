@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "gamarsmod:items/netherite_hoe"
+  }
+}
