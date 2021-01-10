@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "gamarsmod:blocks/test_test_block"
+    }
+}
