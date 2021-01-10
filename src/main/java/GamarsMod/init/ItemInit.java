@@ -50,4 +50,6 @@ public class ItemInit {
     public static final Item REINFORCED_WOOLIN_PANTS = new ArmourBase("reinforced_woolin_pants", REINFORCED_WOOLIN,2, EntityEquipmentSlot.LEGS );
 
     //ANGELO ITEM
+    public static final Item NETHERITE_INGOT = new ItemBase("netherite_ingot");
+
 }
