@@ -3,6 +3,20 @@ item.test_item.name=Test Item
 item.test_material.name=Test Material
 item.test_food.name=Test Food
 item.test_test.name=Test Test
+item.bonk_hammer.name=Bonk Hammer
+
+//ARMOUR
+item.test_helmet.name=Test Helmet
+item.test_chestplate.name=Test Chestplate
+item.test_leggings.name=Test Leggings
+item.test_boots.name=Test Boots
+
+//TOOLS
+item.test_sword.name=Test Sword
+item.test_pickaxe.name=Test Pickaxe
+item.test_axe.name=Test Axe
+item.test_shovel.name=Test Shovel
+item.test_hoe.name=Test Hoe
 
 //BLOCKS
 tile.test_block.name=Test Block

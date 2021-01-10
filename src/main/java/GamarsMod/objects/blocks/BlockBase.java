@@ -1,4 +1,4 @@
-package GamarsMod.blocks;
+package GamarsMod.objects.blocks;
 
 import GamarsMod.init.BlockInit;
 import GamarsMod.init.ItemInit;

@@ -1,6 +1,6 @@
 package GamarsMod.init;
 
-import GamarsMod.blocks.BlockBase;
+import GamarsMod.objects.blocks.BlockBase;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 

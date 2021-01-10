@@ -1,6 +1,5 @@
-package GamarsMod.items;
+package GamarsMod.objects.items;
 
-import GamarsMod.Main;
 import GamarsMod.init.ItemInit;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
