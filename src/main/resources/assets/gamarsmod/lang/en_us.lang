@@ -10,6 +10,7 @@ item.test_helmet.name=Test Helmet
 item.test_chestplate.name=Test Chestplate
 item.test_leggings.name=Test Leggings
 item.test_boots.name=Test Boots
+item.reinforced_woolin_pants.name=Reinforced Woolin Pants
 
 //TOOLS
 item.test_sword.name=Test Sword

@@ -23,22 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efcc044e-45c2-4f94-b3b1-44260d64ad58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GamarsMod.api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GamarsMod.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GamarsMod.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamarsMod.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GamarsMod.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GamarsMod.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/GamarsMod.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GamarsMod.iws" beforeDir="false" afterPath="$PROJECT_DIR$/GamarsMod.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/GamarsMod/init/BlockInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/GamarsMod/init/BlockInit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/GamarsMod/init/ItemInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/GamarsMod/init/ItemInit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/GamarsMod/items/ItemBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/GamarsMod/items/ItemBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/gamarsmod/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/gamarsmod/lang/en_us.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/gamarsmod/textures/blocks/test_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/gamarsmod/textures/blocks/test_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/gamarsmod/textures/items/test_item.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/gamarsmod/textures/items/test_item.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/GamarsMod/init/BlockInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/GamarsMod/init/BlockInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/GamarsMod/init/ItemInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/GamarsMod/init/ItemInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/GamarsMod/items/ItemBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/GamarsMod/items/ItemBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GamarsMod/init/BlockInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GamarsMod/init/BlockInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GamarsMod/init/ItemInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GamarsMod/init/ItemInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/gamarsmod/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/gamarsmod/lang/en_us.lang" afterDir="false" />
     </list>
@@ -273,6 +259,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
@@ -283,26 +270,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610244868602" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1610244995762">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1610257706017">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610244995762" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1610244995762">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610257706017" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1610257706017">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610244995762" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1610244995762">
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610257706017" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1610257706017">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610244995762" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1610244995762">
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610257706017" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1610257706017">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610244995762" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610257706017" />
     <state x="461" y="184" key="SettingsEditor" timestamp="1610244837346">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="184" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610244837346" />
+    <state x="667" y="139" width="585" height="801" key="find.popup" timestamp="1610257257443">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="667" y="139" width="585" height="801" key="find.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610257257443" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1610243118372">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
