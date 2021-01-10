@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "NNN",
+    "NGG",
+    "GG "
+  ],
+
+  "key": {
+    "N": {
+      "item": "gamarsmod:netherite_scrap"
+    },
+
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+
+  "result": {
+    "item": "gamarsmod:netherite_ingot",
+    "count": 1
+  }
+}
