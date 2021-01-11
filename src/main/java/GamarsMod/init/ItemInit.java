@@ -2,6 +2,8 @@ package GamarsMod.init;
 
 import GamarsMod.objects.armour.ArmourBase;
 import GamarsMod.objects.items.ItemBase;
+import GamarsMod.objects.items.foods.ItemCustomFood;
+import GamarsMod.objects.items.foods.ItemTestSeed;
 import GamarsMod.objects.tools.*;
 import GamarsMod.util.Reference;
 import net.minecraft.init.SoundEvents;
@@ -30,9 +32,13 @@ public class ItemInit {
 
     //ITEMS
     public static final Item TEST_ITEM = new ItemBase("test_item");
-    public static final Item TEST_FOOD = new ItemBase("test_food");
 
     public static final Item BONK_HAMMER = new ToolSword("bonk_hammer", TEST_TOOL);
+
+    // FOODS
+    public static final Item TEST_SEEDS = new ItemTestSeed("test_seeds");
+    public static final Item TEST_WHEAT = new ItemBase("test_wheat");
+    public static final Item TEST_FOOD = new ItemCustomFood("test_food", 5, 3.5F, true);
 
     //MATERIALS
     public static final Item TEST_MATERIAL = new ItemBase("test_material");

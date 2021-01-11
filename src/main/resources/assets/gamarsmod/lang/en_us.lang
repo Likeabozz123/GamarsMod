@@ -7,6 +7,8 @@ item.bonk_hammer.name=Bonk Hammer
 item.netherite_ingot.name=Netherite Ingot
 item.netherite_scrap.name=Netherite Scrap
 item.stacked_iron_ore.name=Stacked Iron Ore
+item.test_seeds.name=Test Seeds
+item.test_wheat.name=Test Wheat
 
 //ARMOUR
 item.test_helmet.name=Test Helmet
@@ -39,6 +41,7 @@ tile.test_test_block.name=Test Test Block
 tile.packed_wool.name=Packed Wool
 tile.ancient_debris.name=Ancient Debris
 tile.netherite_block.name=Netherite Block
+tile.test_plant.name=Test Plant
 
 //GUI
 itemGroup.gamarstab=Gamars Tab

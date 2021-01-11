@@ -1,6 +1,7 @@
 package GamarsMod.init;
 
 import GamarsMod.objects.blocks.BlockBase;
+import GamarsMod.objects.blocks.seeds.BlockTestSeed;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -13,6 +14,8 @@ public class BlockInit {
 
     //BLOCKS
 
+    //SEEDS
+    public static final Block TEST_PLANT = new BlockTestSeed("test_plant");
 
     //ORES
     public static final Block TEST_ORE = new BlockBase("test_ore", Material.ROCK, 25.0F, 50.0F, 3, "pickaxe");
