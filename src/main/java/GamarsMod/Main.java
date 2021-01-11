@@ -32,7 +32,6 @@ public class Main {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         RegistryHandler.initRegisteries();
-        CraftingRecipes.init();
     }
 
     @Mod.EventHandler
