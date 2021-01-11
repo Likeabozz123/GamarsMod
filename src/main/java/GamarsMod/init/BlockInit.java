@@ -24,5 +24,6 @@ public class BlockInit {
     //MATERIAL BLOCKS
     public static final Block TEST_BLOCK = new BlockBase("test_block", Material.IRON, 8.0F, 8.0F, 2, "pickaxe");
     public static final Block NETHERITE_BLOCK = new BlockBase("netherite_block", Material.ROCK, 15.0F, 50.0F, 3, "pickaxe");
+
 }
 

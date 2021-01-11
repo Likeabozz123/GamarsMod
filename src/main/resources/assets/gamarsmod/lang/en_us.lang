@@ -5,7 +5,8 @@ item.test_food.name=Test Food
 item.test_test.name=Test Test
 item.bonk_hammer.name=Bonk Hammer
 item.netherite_ingot.name=Netherite Ingot
-item.netherite_scrap.name= Netherite Scrap
+item.netherite_scrap.name=Netherite Scrap
+item.stacked_iron_ore.name=Stacked Iron Ore
 
 //ARMOUR
 item.test_helmet.name=Test Helmet

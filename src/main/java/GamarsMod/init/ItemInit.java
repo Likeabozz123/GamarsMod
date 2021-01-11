@@ -38,6 +38,7 @@ public class ItemInit {
     public static final Item TEST_MATERIAL = new ItemBase("test_material");
     public static final Item NETHERITE_INGOT = new ItemBase("netherite_ingot");
     public static final Item NETHERITE_SCRAP = new ItemBase("netherite_scrap");
+    public static final Item STACKED_IRON_ORE = new ItemBase("stacked_iron_ore");
 
     //ARMOUR
     public static final Item TEST_HELMET = new ArmourBase("test_helmet", TEST_ARMOUR, 1, EntityEquipmentSlot.HEAD);

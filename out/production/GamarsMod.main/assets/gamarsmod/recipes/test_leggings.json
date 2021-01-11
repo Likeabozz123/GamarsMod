@@ -1,24 +1,13 @@
 {
-    "type": "minecraft:crafting_shaped",
-    
-    "pattern":
-    [
-        "###",
-        "# #",
-        "# #"
-    ],
-    
-    "key":
-    {
-        "#":
-        {
-            "item": "gamarsmod:test_material"
-        }
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [{
+        "item": "gamarsmod:netherite_ingot"
     },
-    
-    "result":
-    {
-        "item":  "gamarsmod:test_leggings",
-        "count": 1
+        {
+            "item": "minecraft:diamond_leggings"
+        }
+    ],
+    "result": {
+        "item": "gamarsmod:netherite_leggings"
     }
 }

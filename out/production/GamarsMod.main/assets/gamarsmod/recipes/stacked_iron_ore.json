@@ -3,22 +3,23 @@
     
     "pattern":
     [
-        "   ",
-        "# #",
-        "# #"
+        "###",
+        "###",
+        "###"
     ],
     
     "key":
     {
         "#":
         {
-            "item": "gamarsmod:test_material"
+            "item": "minecraft:iron_ore"
         }
+
     },
     
     "result":
     {
-        "item":  "gamarsmod:test_boots",
+        "item":  "gamarsmod:stacked_iron_ore",
         "count": 1
     }
 }
