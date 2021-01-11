@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [{
+			"item": "gamarsmod:netherite_ingot"
+		},
+		{
+			"item": "minecraft:diamond_helmet"
+		}
+	],
+	"result": {
+		"item": "gamarsmod:netherite_helmet"
+	}
+}
