@@ -59,6 +59,7 @@ public class ItemInit {
     public static final Item TEST_AXE = new ToolAxe("test_axe", TEST_TOOL, 10.0F, 1.0f);
     public static final Item TEST_SHOVEL = new ToolShovel("test_shovel", TEST_TOOL);
     public static final Item TEST_HOE = new ToolHoe("test_hoe", TEST_TOOL);
+    public static final Item TEST_MULTITOOL = new ToolMultiTool("test_multitool", TEST_TOOL);
 
     public static final Item NETHERITE_SWORD = new ToolSword("netherite_sword", NETHERITE_TOOL);
     public static final Item NETHERITE_AXE = new ToolAxe("netherite_axe", NETHERITE_TOOL, 10.0F, 1.0F);

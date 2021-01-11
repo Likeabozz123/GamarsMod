@@ -17,7 +17,7 @@ public class SmeltingRecipes {
 
         GameRegistry.addSmelting(new ItemStack(BlockInit.TEST_ORE), new ItemStack(ItemInit.TEST_MATERIAL), 1.0F);
 
-        GameRegistry.addSmelting(new ItemStack(ItemInit.STACKED_IRON_ORE), new ItemStack(Blocks.IRON_BLOCK), 6.3F);
+        GameRegistry.addSmelting(new ItemStack(ItemInit.STACKED_IRON_ORE), new ItemStack(Items.IRON_INGOT, 9), 6.3F);
     }
 
 }

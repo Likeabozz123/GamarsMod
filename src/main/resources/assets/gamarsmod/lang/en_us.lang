@@ -25,6 +25,7 @@ item.test_pickaxe.name=Test Pickaxe
 item.test_axe.name=Test Axe
 item.test_shovel.name=Test Shovel
 item.test_hoe.name=Test Hoe
+item.test_multitool.name=Test Multitool
 item.netherite_sword.name=Netherite Sword
 item.netherite_axe.name=Netherite Axe
 item.netherite_pickaxe.name=Netherite Pickaxe
