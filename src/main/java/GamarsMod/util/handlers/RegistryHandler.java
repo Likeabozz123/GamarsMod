@@ -3,6 +3,7 @@ package GamarsMod.util.handlers;
 import GamarsMod.Main;
 import GamarsMod.init.BlockInit;
 import GamarsMod.init.ItemInit;
+import GamarsMod.recipes.SmeltingRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -46,6 +47,7 @@ public class RegistryHandler {
 
     public static void initRegisteries(){
         Main.proxy.render();
+        SmeltingRecipes.init();
     }
 
     public static void postInitRegister(){
