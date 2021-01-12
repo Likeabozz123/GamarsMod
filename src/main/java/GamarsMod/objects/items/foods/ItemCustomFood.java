@@ -20,7 +20,7 @@ public class ItemCustomFood extends ItemFood {
         setCreativeTab(Main.gamarsTab);
         setAlwaysEdible();
 
-        ItemInit.ITEMS.add(this);
+        // ItemInit.ITEMS.add(this);
     }
 
     @Override

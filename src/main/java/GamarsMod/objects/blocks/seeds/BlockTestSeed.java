@@ -24,8 +24,8 @@ public class BlockTestSeed extends BlockCrops {
         setUnlocalizedName(name);
         setRegistryName(name);
 
-        BlockInit.BLOCKS.add(this);
-        ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));
+        // BlockInit.BLOCKS.add(this);
+        // ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(getRegistryName()));
     }
 
     @Override

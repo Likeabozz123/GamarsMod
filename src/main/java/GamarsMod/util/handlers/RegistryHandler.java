@@ -5,6 +5,7 @@ import GamarsMod.init.BlockInit;
 import GamarsMod.init.ItemInit;
 import GamarsMod.recipes.SmeltingRecipes;
 import GamarsMod.recipes.CraftingRecipes;
+import GamarsMod.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -16,7 +17,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod.EventBusSubscriber
 public class RegistryHandler {
 
-    @SubscribeEvent
+/*    @SubscribeEvent
     public static void onItemRegister(RegistryEvent.Register<Item> event) {
 
         event.getRegistry().registerAll(ItemInit.ITEMS.toArray(new Item[0]));
@@ -41,7 +42,7 @@ public class RegistryHandler {
         for (Block block : BlockInit.BLOCKS) {
             Main.proxy.registerItemRenderer(Item.getItemFromBlock(block), 0, "inventory");
         }
-    }
+    }*/
 
     public static void preInitRegisteries() {
     }

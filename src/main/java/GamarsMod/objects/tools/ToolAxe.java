@@ -29,7 +29,7 @@ public class ToolAxe extends ItemTool {
         setRegistryName(name);
         setCreativeTab(Main.gamarsTab);
 
-        ItemInit.ITEMS.add(this);
+        // ItemInit.ITEMS.add(this);
     }
 
     public float getStrVsBlock(ItemStack stack, IBlockState state) {

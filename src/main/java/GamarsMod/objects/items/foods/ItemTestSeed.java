@@ -24,7 +24,7 @@ public class ItemTestSeed extends Item implements IPlantable {
         setUnlocalizedName(name);
         setCreativeTab(Main.gamarsTab);
 
-        ItemInit.ITEMS.add(this);
+        // ItemInit.ITEMS.add(this);
     }
 
     @Override

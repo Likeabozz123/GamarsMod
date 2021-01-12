@@ -14,7 +14,7 @@ public class ToolShovel extends ItemSpade {
         setUnlocalizedName(name);
         setCreativeTab(Main.gamarsTab);
 
-        ItemInit.ITEMS.add(this);
+        // ItemInit.ITEMS.add(this);
     }
 
 }

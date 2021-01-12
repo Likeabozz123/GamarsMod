@@ -1,76 +1,151 @@
 package GamarsMod.init;
 
 import GamarsMod.objects.armour.ArmourBase;
+import GamarsMod.objects.blocks.BlockBase;
 import GamarsMod.objects.items.ItemBase;
+import GamarsMod.objects.items.MaterialTypes;
 import GamarsMod.objects.items.foods.ItemCustomFood;
 import GamarsMod.objects.items.foods.ItemTestSeed;
 import GamarsMod.objects.tools.*;
 import GamarsMod.util.Reference;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
+import net.minecraft.item.ItemBlock;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
+import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@EventBusSubscriber
+@ObjectHolder(Reference.MOD_ID)
 public class ItemInit {
 
                         //type of variable  //makes what the variable is equal to
-    public static final List<Item> ITEMS = new ArrayList<Item>();
+    private static final ArrayList<Item> ITEMS = new ArrayList<Item>();
                                    //name of variable
 
-    //TOOL MATERIAL TYPES
-    public static final Item.ToolMaterial TEST_TOOL = EnumHelper.addToolMaterial("test_tool", 3, 9001, 12.0F, 4.0F, 18);
-    public static final Item.ToolMaterial NETHERITE_TOOL = EnumHelper.addToolMaterial("netherite_tool", 3, 2031, 9, 3, 10);
-
-    //ARMOUR MATERIAL TYPES
-    public static final ItemArmor.ArmorMaterial TEST_ARMOUR = EnumHelper.addArmorMaterial("test_armour", Reference.MOD_ID + ":TEST", 15, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F);
-    public static final ItemArmor.ArmorMaterial REINFORCED_WOOLIN = EnumHelper.addArmorMaterial("reinforced_woolin", Reference.MOD_ID + ":REINFORCED_WOOLIN", 7, new int[]{4, 6, 7, 5}, 30, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 5.69F);
-    public static final ItemArmor.ArmorMaterial NETHERITE_ARMOUR = EnumHelper.addArmorMaterial("netherite_armour", Reference.MOD_ID + ":NETHERITE_ARMOUR", 7, new int[]{5, 6, 9, 4}, 30, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 4);
+    //MATERIAL TYPES ARE LOCATED IN GamarsMod.objects.items.MaterialTypes
 
     //ITEMS
-    public static final Item TEST_ITEM = new ItemBase("test_item");
+    public static final Item TEST_ITEM = null;
 
-    public static final Item BONK_HAMMER = new ToolBonkHammer("bonk_hammer", TEST_TOOL, 9001.0F, 50.0F);
+    public static final Item BONK_HAMMER = null;
 
     // FOODS
-    public static final Item TEST_SEEDS = new ItemTestSeed("test_seeds");
-    public static final Item TEST_WHEAT = new ItemBase("test_wheat");
-    public static final Item TEST_FOOD = new ItemCustomFood("test_food", 5, 3.5F, true);
+    public static final Item TEST_SEEDS = null;
+    public static final Item TEST_WHEAT = null;
+    public static final Item TEST_FOOD = null;
 
     //MATERIALS
-    public static final Item TEST_MATERIAL = new ItemBase("test_material");
-    public static final Item NETHERITE_INGOT = new ItemBase("netherite_ingot");
-    public static final Item NETHERITE_SCRAP = new ItemBase("netherite_scrap");
-    public static final Item STACKED_IRON_ORE = new ItemBase("stacked_iron_ore");
+    public static final Item TEST_MATERIAL = null;
+    public static final Item NETHERITE_INGOT = null;
+    public static final Item NETHERITE_SCRAP = null;
+    public static final Item STACKED_IRON_ORE = null;
 
     //ARMOUR
-    public static final Item TEST_HELMET = new ArmourBase("test_helmet", TEST_ARMOUR, 1, EntityEquipmentSlot.HEAD);
-    public static final Item TEST_CHESTPLATE = new ArmourBase("test_chestplate", TEST_ARMOUR,1, EntityEquipmentSlot.CHEST);
-    public static final Item TEST_LEGGINGS = new ArmourBase("test_leggings", TEST_ARMOUR, 2, EntityEquipmentSlot.LEGS);
-    public static final Item TEST_BOOTS = new ArmourBase("test_boots", TEST_ARMOUR, 1, EntityEquipmentSlot.FEET);
+    public static final Item TEST_HELMET = null;
+    public static final Item TEST_CHESTPLATE = null;
+    public static final Item TEST_LEGGINGS = null;
+    public static final Item TEST_BOOTS = null;
 
-    public static final Item NETHERITE_HELMET = new ArmourBase("netherite_helmet", NETHERITE_ARMOUR,2, EntityEquipmentSlot.HEAD );
-    public static final Item NETHERITE_CHESTPLATE = new ArmourBase("netherite_chestplate", NETHERITE_ARMOUR,1, EntityEquipmentSlot.CHEST);
-    public static final Item NETHERITE_LEGGINGS = new ArmourBase("netherite_leggings", NETHERITE_ARMOUR, 2, EntityEquipmentSlot.LEGS);
-    public static final Item NETHERITE_BOOTS = new ArmourBase("netherite_boots", NETHERITE_ARMOUR, 1, EntityEquipmentSlot.FEET);
+    public static final Item NETHERITE_HELMET = null;
+    public static final Item NETHERITE_CHESTPLATE = null;
+    public static final Item NETHERITE_LEGGINGS = null;
+    public static final Item NETHERITE_BOOTS = null;
 
-    public static final Item REINFORCED_WOOLIN_PANTS = new ArmourBase("reinforced_woolin_pants", REINFORCED_WOOLIN,2, EntityEquipmentSlot.LEGS);
+    public static final Item REINFORCED_WOOLIN_PANTS = null;
 
     //TOOLS
-    public static final Item TEST_SWORD = new ToolSword("test_sword", TEST_TOOL);
-    public static final Item TEST_PICKAXE = new ToolPickaxe("test_pickaxe", TEST_TOOL);
-    public static final Item TEST_AXE = new ToolAxe("test_axe", TEST_TOOL, 10.0F, 1.0f);
-    public static final Item TEST_SHOVEL = new ToolShovel("test_shovel", TEST_TOOL);
-    public static final Item TEST_HOE = new ToolHoe("test_hoe", TEST_TOOL);
-    public static final Item TEST_MULTITOOL = new ToolMultiTool("test_multitool", TEST_TOOL);
+    public static final Item TEST_SWORD = null;
+    public static final Item TEST_PICKAXE = null;
+    public static final Item TEST_AXE = null;
+    public static final Item TEST_SHOVEL = null;
+    public static final Item TEST_HOE = null;
+    public static final Item TEST_MULTITOOL = null;
 
-    public static final Item NETHERITE_SWORD = new ToolSword("netherite_sword", NETHERITE_TOOL);
-    public static final Item NETHERITE_PICKAXE = new ToolPickaxe("netherite_pickaxe", NETHERITE_TOOL);
-    public static final Item NETHERITE_AXE = new ToolAxe("netherite_axe", NETHERITE_TOOL, 10.0F, 1.0F);
-    public static final Item NETHERITE_SHOVEL = new ToolShovel("netherite_shovel", NETHERITE_TOOL);
-    public static final Item NETHERITE_HOE = new ToolHoe("netherite_hoe", NETHERITE_TOOL);
+    public static final Item NETHERITE_SWORD = null;
+    public static final Item NETHERITE_PICKAXE = null;
+    public static final Item NETHERITE_AXE = null;
+    public static final Item NETHERITE_SHOVEL = null;
+    public static final Item NETHERITE_HOE = null;
+
+
+    @SubscribeEvent // Tell forge the below method is an event handler
+    public static void registerItems(final RegistryEvent.Register<Item> event) { // Handle the Registry event for Block objects.
+        final IForgeRegistry<Item> registry = event.getRegistry(); // Store registry here to save redundant code
+
+        //ITMES
+        registerItem(registry, new ItemBase("test_item"));
+
+        registerItem(registry, new ToolBonkHammer("bonk_hammer", MaterialTypes.TEST_TOOL, 9001.0F, 50.0F));
+
+        //FOODS
+        registerItem(registry, new ItemTestSeed("test_seeds"));
+        registerItem(registry, new ItemBase("test_wheat"));
+        registerItem(registry, new ItemCustomFood("test_food", 5, 3.5F, true));
+
+        //MATERIALS
+        registerItem(registry, new ItemBase("test_material"));
+        registerItem(registry, new ItemBase("netherite_ingot"));
+        registerItem(registry, new ItemBase("netherite_scrap"));
+        registerItem(registry, new ItemBase("stacked_iron_ore"));
+
+        //ARMOUR
+        registerItem(registry, new ArmourBase("test_helmet", MaterialTypes.TEST_ARMOUR, 1, EntityEquipmentSlot.HEAD));
+        registerItem(registry, new ArmourBase("test_chestplate", MaterialTypes.TEST_ARMOUR,1, EntityEquipmentSlot.CHEST));
+        registerItem(registry, new ArmourBase("test_leggings", MaterialTypes.TEST_ARMOUR, 2, EntityEquipmentSlot.LEGS));
+        registerItem(registry, new ArmourBase("test_boots", MaterialTypes.TEST_ARMOUR, 1, EntityEquipmentSlot.FEET));
+
+        registerItem(registry, new ArmourBase("netherite_helmet", MaterialTypes.NETHERITE_ARMOUR,2, EntityEquipmentSlot.HEAD));
+        registerItem(registry, new ArmourBase("netherite_chestplate", MaterialTypes.NETHERITE_ARMOUR,1, EntityEquipmentSlot.CHEST));
+        registerItem(registry, new ArmourBase("netherite_leggings", MaterialTypes.NETHERITE_ARMOUR, 2, EntityEquipmentSlot.LEGS));
+        registerItem(registry, new ArmourBase("netherite_boots", MaterialTypes.NETHERITE_ARMOUR, 1, EntityEquipmentSlot.FEET));
+
+        registerItem(registry, new ArmourBase("reinforced_woolin_pants", MaterialTypes.REINFORCED_WOOLIN ,2, EntityEquipmentSlot.LEGS));
+
+        //TOOLS & WEAPONS
+        registerItem(registry, new ToolSword("test_sword", MaterialTypes.TEST_TOOL));
+        registerItem(registry, new ToolPickaxe("test_pickaxe", MaterialTypes.TEST_TOOL));
+        registerItem(registry, new ToolAxe("test_axe", MaterialTypes.TEST_TOOL, 10.0F, 1.0f));
+        registerItem(registry, new ToolShovel("test_shovel", MaterialTypes.TEST_TOOL));
+        registerItem(registry, new ToolHoe("test_hoe", MaterialTypes.TEST_TOOL));
+        registerItem(registry, new ToolMultiTool("test_multitool", MaterialTypes.TEST_TOOL));
+
+        registerItem(registry, new ToolSword("netherite_sword", MaterialTypes.NETHERITE_TOOL));
+        registerItem(registry, new ToolPickaxe("netherite_pickaxe", MaterialTypes.NETHERITE_TOOL));
+        registerItem(registry, new ToolAxe("netherite_axe", MaterialTypes.NETHERITE_TOOL, 10.0F, 1.0F));
+        registerItem(registry, new ToolShovel("netherite_shovel", MaterialTypes.NETHERITE_TOOL));
+        registerItem(registry, new ToolHoe("netherite_hoe", MaterialTypes.NETHERITE_TOOL));
+
+
+    }
+
+    @SubscribeEvent // Another event handler
+    public static void registerItemModels(final RegistryEvent.Register<Item> event) {
+        final IForgeRegistry<Item> registry = event.getRegistry(); // Store registry here to save redundant code
+
+        for (Item items : ITEMS) {
+            // registry.register(items);
+            ModelLoader.setCustomModelResourceLocation(items, 0, new ModelResourceLocation(items.getRegistryName(), "inventory"));
+        }
+    }
+
+    private static void registerItem(IForgeRegistry<Item> registry, Item items) { // Make a helper method to reduce redundant code
+        registry.register(items); // Register our block officially here
+        ITEMS.add(items); // Add the block to our registration list here so we can do their items soon
+    }
 
 }

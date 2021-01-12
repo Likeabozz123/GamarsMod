@@ -20,7 +20,7 @@ public class ToolBonkHammer extends ItemBonkHammer {
         this.attackSpeed = attackSpeed - 4.0F;
         this.attackDamage = attackDamage - 1.0F;
 
-        ItemInit.ITEMS.add(this);
+        // ItemInit.ITEMS.add(this);
     }
 
     @Override

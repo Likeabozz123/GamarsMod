@@ -21,7 +21,7 @@ public class GamarsTab extends CreativeTabs {
     public ItemStack getTabIconItem() {
 
         // Tab Icon Item
-        return new ItemStack(ItemInit.TEST_MATERIAL);
+        return new ItemStack(ItemInit.TEST_ITEM);
 
         // Tab Icon Block
         //return new ItemStack(Item.getItemFromBlock(BlockInit.TEST_BLOCK));
