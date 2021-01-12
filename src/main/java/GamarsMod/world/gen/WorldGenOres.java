@@ -31,11 +31,11 @@ public class WorldGenOres implements IWorldGenerator {
         switch (world.provider.getDimensionType()) {
 
             case NETHER:
-                genStandard(ancient_debris, world, random, chunkX, chunkZ, 3, 4, 80);
+                genStandard(ancient_debris, world, random, chunkX, chunkZ, 1, 4, 80);
                 break;
 
             case OVERWORLD:
-                genStandard(test_ore, world, random, chunkX, chunkZ, 3, 4, 80);
+                genStandard(test_ore, world, random, chunkX, chunkZ, 1, 4, 12);
                 break;
 
             case THE_END:
