@@ -6,7 +6,9 @@ import GamarsMod.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.world.IBlockAccess;
 
 public class BlockBase extends Block {
 

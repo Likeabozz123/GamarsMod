@@ -33,7 +33,7 @@ public class ItemInit {
     //ITEMS
     public static final Item TEST_ITEM = new ItemBase("test_item");
 
-    public static final Item BONK_HAMMER = new ToolSword("bonk_hammer", TEST_TOOL);
+    public static final Item BONK_HAMMER = new ToolBonkHammer("bonk_hammer", TEST_TOOL, 9001.0F, 50.0F);
 
     // FOODS
     public static final Item TEST_SEEDS = new ItemTestSeed("test_seeds");
@@ -68,8 +68,8 @@ public class ItemInit {
     public static final Item TEST_MULTITOOL = new ToolMultiTool("test_multitool", TEST_TOOL);
 
     public static final Item NETHERITE_SWORD = new ToolSword("netherite_sword", NETHERITE_TOOL);
-    public static final Item NETHERITE_AXE = new ToolAxe("netherite_axe", NETHERITE_TOOL, 10.0F, 1.0F);
     public static final Item NETHERITE_PICKAXE = new ToolPickaxe("netherite_pickaxe", NETHERITE_TOOL);
+    public static final Item NETHERITE_AXE = new ToolAxe("netherite_axe", NETHERITE_TOOL, 10.0F, 1.0F);
     public static final Item NETHERITE_SHOVEL = new ToolShovel("netherite_shovel", NETHERITE_TOOL);
     public static final Item NETHERITE_HOE = new ToolHoe("netherite_hoe", NETHERITE_TOOL);
 

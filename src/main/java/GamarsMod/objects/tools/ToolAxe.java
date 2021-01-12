@@ -8,7 +8,9 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Enchantments;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
@@ -33,6 +35,22 @@ public class ToolAxe extends ItemTool {
     public float getStrVsBlock(ItemStack stack, IBlockState state) {
         Material material = state.getMaterial();
         return material != Material.WOOD && material != Material.PLANTS && material != Material.VINE ? 1 : this.toolMaterial.getEfficiency();
+    }
+
+
+    @Override
+    public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
+
+        if(enchantment == Enchantments.SHARPNESS) {
+            return true;
+        }
+        if(enchantment == Enchantments.BANE_OF_ARTHROPODS) {
+            return true;
+        }
+        if(enchantment == Enchantments.SMITE) {
+            return true;
+        }
+        else return super.canApplyAtEnchantingTable(stack, enchantment);
     }
 
 }
