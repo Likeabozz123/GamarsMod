@@ -23,5 +23,6 @@ public class MaterialTypes {
     public static final ArmorMaterial REINFORCED_WOOLIN = addArmorMaterial("reinforced_woolin", Reference.MOD_ID + ":REINFORCED_WOOLIN", 7, new int[]{4, 6, 7, 5}, 30, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 5.69F);
     public static final ArmorMaterial NETHERITE_ARMOUR = addArmorMaterial("netherite_armour", Reference.MOD_ID + ":NETHERITE_ARMOUR", 7, new int[]{5, 6, 9, 4}, 30, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 4);
     public static final ArmorMaterial LIGHT_ARMOUR = addArmorMaterial("light_armour", Reference.MOD_ID + ":LIGHT_ARMOUR", 15, new int[]{1, 3, 5, 1}, 14, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0.0F);
+    public static final ArmorMaterial ENDERITE_ARMOUR = addArmorMaterial("enderite_armour", Reference.MOD_ID + ":ENDERITE_ARMOUR", 7, new int[]{5, 7, 8, 3}, 30, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 4);
 
 }

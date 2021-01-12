@@ -9,6 +9,9 @@ item.netherite_scrap.name=Netherite Scrap
 item.stacked_iron_ore.name=Stacked Iron Ore
 item.test_seeds.name=Test Seeds
 item.test_wheat.name=Test Wheat
+item.shattered_pearl.name=Shattered Pearl
+item.enderite_shard.name=Enderite Shard
+item.corrupted_pearl.name=Corrupted Pearl
 
 //ARMOUR
 item.test_helmet.name=Test Helmet
@@ -20,6 +23,11 @@ item.netherite_helmet.name=Netherite Helmet
 item.netherite_chestplate.name=Netherite Chestplate
 item.netherite_leggings.name=Netherite Leggings
 item.netherite_boots.name=Netherite Boots
+
+item.enderite_helmet.name=Enderite Helmet
+item.enderite_chestplate.name=Enderite Chestplate
+item.enderite_leggings.name=Enderite Leggings
+item.enderite_boots.name=Enderite Boots
 
 item.reinforced_woolin_pants.name=Reinforced Woolin Pants
 

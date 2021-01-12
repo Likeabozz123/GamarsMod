@@ -57,7 +57,7 @@ public class BlockInit {
 
         //ORES
         registerBlock(registry, new BlockBase("test_ore", Material.ROCK, 25f, 50f, 3, "pickaxe")); // Call to register our block here, with our new block instance
-        registerBlock(registry, new BlockBase("ancient_debris", Material.ROCK, 30.0F, 50.0F, 3, "pickaxe"));
+        registerBlock(registry, new BlockBase("ancient_debris", Material.ROCK, 30.0F, 1200.0F, 3, "pickaxe"));
 
         //MATERIALS
         registerBlock(registry,  new BlockBase("packed_wool", Material.SAND, 15.25F, 100.0F, 2, "axe"));

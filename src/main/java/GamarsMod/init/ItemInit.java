@@ -3,6 +3,7 @@ package GamarsMod.init;
 import GamarsMod.objects.armour.ArmourBase;
 import GamarsMod.objects.items.ItemBase;
 import GamarsMod.objects.items.MaterialTypes;
+import GamarsMod.objects.items.custom.ItemEnchantedBase;
 import GamarsMod.objects.items.foods.ItemCustomFood;
 import GamarsMod.objects.items.foods.ItemTestSeed;
 import GamarsMod.objects.items.tools.*;
@@ -56,6 +57,11 @@ public class ItemInit {
     public static final Item NETHERITE_LEGGINGS = null;
     public static final Item NETHERITE_BOOTS = null;
 
+    public static final Item ENDERITE_HELMET = null;
+    public static final Item ENDERITE_CHESTPLATE = null;
+    public static final Item ENDERITE_LEGGINGS = null;
+    public static final Item ENDERITE_BOOTS = null;
+
     public static final Item REINFORCED_WOOLIN_PANTS = null;
 
     public static final Item LIGHT_HELMET = null;
@@ -81,6 +87,9 @@ public class ItemInit {
 
         //ITMES
         registerItem(registry, new ItemBase("test_item"));
+        registerItem(registry,new ItemBase("shattered_pearl"));
+        registerItem(registry,new ItemBase("enderite_shard"));
+        registerItem(registry,new ItemEnchantedBase("corrupted_pearl"));
 
         registerItem(registry, new ToolBonkHammer("bonk_hammer", MaterialTypes.TEST_TOOL, 9001.0F, 50.0F));
 
@@ -105,6 +114,11 @@ public class ItemInit {
         registerItem(registry, new ArmourBase("netherite_chestplate", MaterialTypes.NETHERITE_ARMOUR,1, EntityEquipmentSlot.CHEST));
         registerItem(registry, new ArmourBase("netherite_leggings", MaterialTypes.NETHERITE_ARMOUR, 2, EntityEquipmentSlot.LEGS));
         registerItem(registry, new ArmourBase("netherite_boots", MaterialTypes.NETHERITE_ARMOUR, 1, EntityEquipmentSlot.FEET));
+
+        registerItem(registry, new ArmourBase("enderite_helmet", MaterialTypes.ENDERITE_ARMOUR,2, EntityEquipmentSlot.HEAD));
+        registerItem(registry, new ArmourBase("enderite_chestplate", MaterialTypes.ENDERITE_ARMOUR,1, EntityEquipmentSlot.CHEST));
+        registerItem(registry, new ArmourBase("enderite_leggings", MaterialTypes.ENDERITE_ARMOUR, 2, EntityEquipmentSlot.LEGS));
+        registerItem(registry, new ArmourBase("enderite_boots", MaterialTypes.ENDERITE_ARMOUR, 1, EntityEquipmentSlot.FEET));
 
         registerItem(registry, new ArmourBase("reinforced_woolin_pants", MaterialTypes.REINFORCED_WOOLIN ,2, EntityEquipmentSlot.LEGS));
 
