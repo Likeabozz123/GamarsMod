@@ -6,6 +6,7 @@ import GamarsMod.init.ItemInit;
 import GamarsMod.recipes.SmeltingRecipes;
 import GamarsMod.recipes.CraftingRecipes;
 import GamarsMod.util.Reference;
+import GamarsMod.world.gen.WorldGenOres;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -45,18 +46,20 @@ public class RegistryHandler {
     }*/
 
     public static void preInitRegisteries() {
+
     }
-    public static void initRegisteries(){
+    public static void initRegisteries() {
         Main.proxy.render();
         SmeltingRecipes.init();
         CraftingRecipes.init();
+        GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
     }
 
-    public static void postInitRegister(){
+    public static void postInitRegister() {
 
     }
 
-    public static void serverRegisteries(){
+    public static void serverRegisteries() {
 
     }
 
