@@ -58,6 +58,8 @@ public class ItemInit {
 
     public static final Item REINFORCED_WOOLIN_PANTS = null;
 
+    public static final Item LIGHT_HELMET = null;
+
     //TOOLS
     public static final Item TEST_SWORD = null;
     public static final Item TEST_PICKAXE = null;
@@ -106,6 +108,8 @@ public class ItemInit {
 
         registerItem(registry, new ArmourBase("reinforced_woolin_pants", MaterialTypes.REINFORCED_WOOLIN ,2, EntityEquipmentSlot.LEGS));
 
+        registerItem(registry, new ArmourBase("light_helmet", MaterialTypes.LIGHT_ARMOUR, 1, EntityEquipmentSlot.HEAD));
+
         //TOOLS & WEAPONS
         registerItem(registry, new ToolSword("test_sword", MaterialTypes.TEST_TOOL));
         registerItem(registry, new ToolPickaxe("test_pickaxe", MaterialTypes.TEST_TOOL));
@@ -120,7 +124,6 @@ public class ItemInit {
         registerItem(registry, new ToolShovel("netherite_shovel", MaterialTypes.NETHERITE_TOOL));
         registerItem(registry, new ToolHoe("netherite_hoe", MaterialTypes.NETHERITE_TOOL));
 
-
     }
 
     @SubscribeEvent // Another event handler
@@ -129,13 +132,13 @@ public class ItemInit {
 
         for (Item items : ITEMS) {
             // registry.register(items);
-            ModelLoader.setCustomModelResourceLocation(items, 0, new ModelResourceLocation(items.getRegistryName(), "inventory"));
         }
     }
 
     private static void registerItem(IForgeRegistry<Item> registry, Item items) { // Make a helper method to reduce redundant code
         registry.register(items); // Register our block officially here
         ITEMS.add(items); // Add the block to our registration list here so we can do their items soon
+        ModelLoader.setCustomModelResourceLocation(items, 0, new ModelResourceLocation(items.getRegistryName(), "inventory"));
     }
 
 }

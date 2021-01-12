@@ -29,6 +29,7 @@ public class BlockInit {
     private static final ArrayList<Block> BLOCKS = new ArrayList<Block>();
 
     //BLOCKS
+    public static final Block LIGHT_BLOCK = null;
 
     //SEEDS
     public static final Block TEST_PLANT = null;
@@ -49,6 +50,7 @@ public class BlockInit {
         final IForgeRegistry<Block> registry = event.getRegistry(); // Store registry here to save redundant code
 
         //BLOCKS
+        registerBlock(registry, new BlockBase("light_block", Material.IRON, 8.0F, 8.0F, 2, "pickaxe").setLightLevel(5.0F));
 
         //SEEDS
         registerBlock(registry, new BlockTestSeed("test_plant"));
@@ -56,11 +58,14 @@ public class BlockInit {
         //ORES
         registerBlock(registry, new BlockBase("test_ore", Material.ROCK, 25f, 50f, 3, "pickaxe")); // Call to register our block here, with our new block instance
         registerBlock(registry, new BlockBase("ancient_debris", Material.ROCK, 30.0F, 50.0F, 3, "pickaxe"));
+
         //MATERIALS
         registerBlock(registry,  new BlockBase("packed_wool", Material.SAND, 15.25F, 100.0F, 2, "axe"));
         registerBlock(registry, new BlockBase("test_block", Material.IRON, 8.0F, 8.0F, 2, "pickaxe"));
+
         //MATERIAL BLOCKS
         registerBlock(registry, new BlockBase("netherite_block", Material.ROCK, 15.0F, 50.0F, 3, "pickaxe"));
+
     }
 
     @SubscribeEvent // Another event handler

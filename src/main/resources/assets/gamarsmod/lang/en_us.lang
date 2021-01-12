@@ -15,11 +15,15 @@ item.test_helmet.name=Test Helmet
 item.test_chestplate.name=Test Chestplate
 item.test_leggings.name=Test Leggings
 item.test_boots.name=Test Boots
-item.reinforced_woolin_pants.name=Reinforced Woolin Pants
+
 item.netherite_helmet.name=Netherite Helmet
 item.netherite_chestplate.name=Netherite Chestplate
 item.netherite_leggings.name=Netherite Leggings
 item.netherite_boots.name=Netherite Boots
+
+item.reinforced_woolin_pants.name=Reinforced Woolin Pants
+
+item.light_helmet.name=Light Helmet
 
 //TOOLS
 item.test_sword.name=Test Sword
@@ -28,6 +32,7 @@ item.test_axe.name=Test Axe
 item.test_shovel.name=Test Shovel
 item.test_hoe.name=Test Hoe
 item.test_multitool.name=Test Multitool
+
 item.netherite_sword.name=Netherite Sword
 item.netherite_axe.name=Netherite Axe
 item.netherite_pickaxe.name=Netherite Pickaxe
@@ -42,6 +47,7 @@ tile.packed_wool.name=Packed Wool
 tile.ancient_debris.name=Ancient Debris
 tile.netherite_block.name=Netherite Block
 tile.test_plant.name=Test Plant
+tile.light_block.name=Light Block
 
 //GUI
 itemGroup.gamarstab=Gamars Tab
