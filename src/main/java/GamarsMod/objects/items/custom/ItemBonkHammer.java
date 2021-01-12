@@ -1,4 +1,4 @@
-package GamarsMod.objects.items;
+package GamarsMod.objects.items.custom;
 
 import com.google.common.collect.Multimap;
 import net.minecraft.block.Block;

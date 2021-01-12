@@ -1,4 +1,4 @@
-package GamarsMod.objects.tools;
+package GamarsMod.objects.items.tools;
 
 import GamarsMod.Main;
 import com.google.common.collect.ImmutableSet;

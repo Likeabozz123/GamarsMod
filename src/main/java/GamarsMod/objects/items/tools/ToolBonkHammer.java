@@ -1,13 +1,10 @@
-package GamarsMod.objects.tools;
+package GamarsMod.objects.items.tools;
 
 import GamarsMod.Main;
-import GamarsMod.init.ItemInit;
-import GamarsMod.objects.items.ItemBonkHammer;
+import GamarsMod.objects.items.custom.ItemBonkHammer;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.init.Enchantments;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
 
 public class ToolBonkHammer extends ItemBonkHammer {
 

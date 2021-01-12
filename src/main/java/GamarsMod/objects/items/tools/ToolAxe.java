@@ -1,17 +1,13 @@
-package GamarsMod.objects.tools;
+package GamarsMod.objects.items.tools;
 
 import GamarsMod.Main;
-import GamarsMod.init.BlockInit;
-import GamarsMod.init.ItemInit;
 import com.google.common.collect.Sets;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Enchantments;
-import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 

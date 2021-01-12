@@ -1,9 +1,6 @@
-package GamarsMod.objects.tools;
+package GamarsMod.objects.items.tools;
 
 import GamarsMod.Main;
-import GamarsMod.init.ItemInit;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemPickaxe;
 
 public class ToolPickaxe extends ItemPickaxe {
