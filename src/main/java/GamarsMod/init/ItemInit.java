@@ -4,6 +4,7 @@ import GamarsMod.objects.armour.ArmourBase;
 import GamarsMod.objects.items.ItemBase;
 import GamarsMod.objects.items.MaterialTypes;
 import GamarsMod.objects.items.custom.ItemEnchantedBase;
+import GamarsMod.objects.items.custom.ItemStaff;
 import GamarsMod.objects.items.foods.ItemCustomFood;
 import GamarsMod.objects.items.foods.ItemTestSeed;
 import GamarsMod.objects.items.tools.*;
@@ -80,6 +81,9 @@ public class ItemInit {
     public static final Item NETHERITE_SHOVEL = null;
     public static final Item NETHERITE_HOE = null;
 
+    //STAVES
+    public static final Item TEST_STAFF = null;
+
 
     @SubscribeEvent // Tell forge the below method is an event handler
     public static void registerItems(final RegistryEvent.Register<Item> event) { // Handle the Registry event for Block objects.
@@ -137,6 +141,9 @@ public class ItemInit {
         registerItem(registry, new ToolAxe("netherite_axe", MaterialTypes.NETHERITE_TOOL, 10.0F, 1.0F));
         registerItem(registry, new ToolShovel("netherite_shovel", MaterialTypes.NETHERITE_TOOL));
         registerItem(registry, new ToolHoe("netherite_hoe", MaterialTypes.NETHERITE_TOOL));
+
+        //STAVES
+        registerItem(registry, new ItemStaff("test_staff"));
 
     }
 

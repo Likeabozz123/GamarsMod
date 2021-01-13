@@ -10,7 +10,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.world.IBlockAccess;
 
-public class BlockBase extends Block {
+    public class BlockBase extends Block {
 
     public BlockBase(String name, Material material, float hardness, float resistance, int miningLevel, String tool) {
         super(material);

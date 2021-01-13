@@ -50,7 +50,7 @@ public class BlockInit {
         final IForgeRegistry<Block> registry = event.getRegistry(); // Store registry here to save redundant code
 
         //BLOCKS
-        registerBlock(registry, new BlockBase("light_block", Material.IRON, 8.0F, 8.0F, 2, "pickaxe").setLightLevel(5.0F));
+        registerBlock(registry, new BlockBase("light_block", Material.GLASS, 8.0F, 8.0F, 2, "pickaxe").setLightLevel(1.0F));
 
         //SEEDS
         registerBlock(registry, new BlockTestSeed("test_plant"));
