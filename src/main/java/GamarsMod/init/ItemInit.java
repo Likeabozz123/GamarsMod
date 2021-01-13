@@ -3,8 +3,9 @@ package GamarsMod.init;
 import GamarsMod.objects.armour.ArmourBase;
 import GamarsMod.objects.items.ItemBase;
 import GamarsMod.objects.items.MaterialTypes;
-import GamarsMod.objects.items.custom.ItemEnchantedBase;
+import GamarsMod.objects.items.custom.ItemFuel;
 import GamarsMod.objects.items.custom.ItemStaff;
+import GamarsMod.objects.items.custom.ItemTest;
 import GamarsMod.objects.items.foods.ItemCustomFood;
 import GamarsMod.objects.items.foods.ItemTestSeed;
 import GamarsMod.objects.items.tools.*;
@@ -34,7 +35,8 @@ public class ItemInit {
     //ITEMS
     public static final Item TEST_ITEM = null;
 
-    public static final Item BONK_HAMMER = null;
+    public static final Item TEST_TEST = null;
+    public static final Item TEST_COAL = null;
 
     // FOODS
     public static final Item TEST_SEEDS = null;
@@ -81,6 +83,8 @@ public class ItemInit {
     public static final Item NETHERITE_SHOVEL = null;
     public static final Item NETHERITE_HOE = null;
 
+    public static final Item BONK_HAMMER = null;
+
     //STAVES
     public static final Item TEST_STAFF = null;
 
@@ -91,9 +95,13 @@ public class ItemInit {
 
         //ITMES
         registerItem(registry, new ItemBase("test_item"));
+
+        registerItem(registry, new ItemTest("test_test"));
+        registerItem(registry, new ItemFuel("test_coal", 800));
+
         registerItem(registry,new ItemBase("shattered_pearl"));
         registerItem(registry,new ItemBase("enderite_shard"));
-        registerItem(registry,new ItemEnchantedBase("corrupted_pearl"));
+        registerItem(registry,new ItemBase("corrupted_pearl", true));
 
         registerItem(registry, new ToolBonkHammer("bonk_hammer", MaterialTypes.TEST_TOOL, 9001.0F, 50.0F));
 
@@ -144,6 +152,7 @@ public class ItemInit {
 
         //STAVES
         registerItem(registry, new ItemStaff("test_staff"));
+
 
     }
 

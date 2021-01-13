@@ -33,7 +33,7 @@ public abstract class BlockCustomFurnace extends BlockBase implements ITileEntit
     public static final PropertyBool BURNING = PropertyBool.create("burning");
 
     public BlockCustomFurnace(String name, float hardness, float resistance, int miningLevel, String tool) {
-        super(name, Material.ROCK, hardness, resistance, miningLevel, tool)
+        super(name, Material.ROCK, hardness, resistance, miningLevel, tool);
         setUnlocalizedName(name);
         setHardness(hardness);
         setResistance(resistance);
@@ -97,11 +97,11 @@ public abstract class BlockCustomFurnace extends BlockBase implements ITileEntit
 
     }
 
-    @Override
+/*    @Override
     public TileEntity createTileEntity(World world, IBlockState state)
     {
         return new TileEntityCustomFurnace();
-    }
+    }*/
 
     @Override
     public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)
@@ -138,11 +138,10 @@ public abstract class BlockCustomFurnace extends BlockBase implements ITileEntit
     }
 
     @Override
-    public boolean getEnableStats()
-    {
+    public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.getFront(meta);
-        if(facing.getAxis() == EnumFacing.Axis.Y) facing = EnumFacing.North;
-        return.this.getDefaultState().withProperty(FACING, facing);
+        if(facing.getAxis() == EnumFacing.Axis.Y) facing = EnumFacing.NORTH;
+        return this.getDefaultState().withProperty(FACING, facing);
     }
 }
 

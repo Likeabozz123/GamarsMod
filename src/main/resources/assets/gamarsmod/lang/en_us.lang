@@ -1,16 +1,25 @@
 //ITEMS
 item.test_item.name=Test Item
-item.test_material.name=Test Material
-item.test_food.name=Test Food
+item.test_coal.name=Test Coal
+
 item.test_test.name=Test Test
-item.bonk_hammer.name=Bonk Hammer
-item.netherite_ingot.name=Netherite Ingot
-item.netherite_scrap.name=Netherite Scrap
-item.stacked_iron_ore.name=Stacked Iron Ore
+
+
+//FOODS
+item.test_food.name=Test Food
 item.test_seeds.name=Test Seeds
 item.test_wheat.name=Test Wheat
-item.shattered_pearl.name=Shattered Pearl
+
+//MATERIALS
+item.test_material.name=Test Material
+
+item.netherite_ingot.name=Netherite Ingot
+item.netherite_scrap.name=Netherite Scrap
+
+item.stacked_iron_ore.name=Stacked Iron Ore
+
 item.enderite_shard.name=Enderite Shard
+item.shattered_pearl.name=Shattered Pearl
 item.corrupted_pearl.name=Corrupted Pearl
 
 //ARMOUR
@@ -41,23 +50,38 @@ item.test_shovel.name=Test Shovel
 item.test_hoe.name=Test Hoe
 item.test_multitool.name=Test Multitool
 
+item.bonk_hammer.name=Bonk Hammer
+
 item.netherite_sword.name=Netherite Sword
-item.netherite_axe.name=Netherite Axe
 item.netherite_pickaxe.name=Netherite Pickaxe
+item.netherite_axe.name=Netherite Axe
 item.netherite_shovel.name=Netherite Shovel
 item.netherite_hoe.name=Netherite Hoe
 
+//STAVES
+item.test_staff.name=Test Staff
+
 //BLOCKS
-tile.test_block.name=Test Block
-tile.test_ore.name=Test Ore
-tile.test_test_block.name=Test Test Block
-tile.packed_wool.name=Packed Wool
-tile.ancient_debris.name=Ancient Debris
-tile.netherite_block.name=Netherite Block
-tile.test_plant.name=Test Plant
 tile.light_block.name=Light Block
-tile.rejuvenator.name=Rejuvenator
 tile.stone_mug.name=Stone Mug
+
+//BLOCK OF MATERIALS
+tile.test_block.name=Block of Test
+tile.test_test_block.name=Block of Test Test
+tile.netherite_block.name=Block of Netherite
+
+//ORES
+tile.test_ore.name=Test Ore
+tile.ancient_debris.name=Ancient Debris
+
+//MATERIAL BLOCKS
+tile.packed_wool.name=Packed Wool
+
+//CROPS
+tile.test_plant.name=Test Plant
+
+//MACHINES
+tile.rejuvenator.name=Rejuvenator
 
 //GUI
 itemGroup.gamarstab=Gamars Tab
