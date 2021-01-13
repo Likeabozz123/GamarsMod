@@ -1,6 +1,6 @@
 package GamarsMod.init;
 
-// import GamarsMod.objects.blocks.machines.BlockCustomFurnace;
+import GamarsMod.objects.blocks.machines.BlockCustomFurnace;
 import GamarsMod.objects.blocks.BlockBase;
 import GamarsMod.objects.blocks.custom.BlockRejuvenator;
 import GamarsMod.objects.blocks.custom.BlockStoneMug;
@@ -48,6 +48,8 @@ public class BlockInit {
     //MATERIAL BLOCKS
     public static final Block TEST_BLOCK = null;
     public static final Block NETHERITE_BLOCK = null;
+
+    public static final Block CUSTOM_FURNACE = null;
 
     @SubscribeEvent // Tell forge the below method is an event handler
     public static void registerBlocks(final RegistryEvent.Register<Block> event) { // Handle the Registry event for Block objects.

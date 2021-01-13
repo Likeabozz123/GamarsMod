@@ -23,35 +23,36 @@ import net.minecraft.world.World;
 import java.util.Random;
 
 
-public class BlockCustomFurnace extends BlockBase implements ITileEntityProvider
-{
+public abstract class BlockCustomFurnace extends BlockBase implements ITileEntityProvider {
+
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
     public static final PropertyBool BURNING = PropertyBool.create("burning");
 
-    public BlockCustomFurnace(String name)
-    {
-        super(name, Material.ROCK);
+    public BlockCustomFurnace(String name, float hardness, float resistance, int miningLevel, String tool) {
+        super(name, Material.ROCK, hardness, resistance, miningLevel, tool)
+        setUnlocalizedName(name);
+        setHardness(hardness);
+        setResistance(resistance);
+        setHarvestLevel(tool, miningLevel);
+        setCreativeTab(Main.gamarsTab);
+
         setSoundType(SoundType.STONE);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH).withProperty(BURNING, false));
     }
 
     @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune)
-    {
+    public Item getItemDropped(IBlockState state, Random rand, int fortune)  {
         return Item.getItemFromBlock(BlockInit.CUSTOM_FURNACE);
     }
 
     @Override
-    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state);
-    {
+    public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state) {
         return new ItemStack(BlockInit.CUSTOM_FURNACE);
     }
-    @Override
-    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ)
-    {
-        if(!worldIn.isRemote);
 
-        {
+    @Override
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+        if(!worldIn.isRemote)  {
             playerIn.openGui(Main.instance, Reference.GUI_BLOCK_CUSTOM_FURNACE, worldIn, pos.getX(), pos.getY(), pos.getZ());
         }
         return true;
@@ -61,7 +62,6 @@ public class BlockCustomFurnace extends BlockBase implements ITileEntityProvider
     public void onBlockAdded(World worldIn, BlockPos pos, IBlockState state)
     {
         if (!worldIn.isRemote);
-    }
         {
             IBlockState north = worldIn.getBlockState(pos.north());
             IBlockState south = worldIn.getBlockState(pos.south());
@@ -75,9 +75,5 @@ public class BlockCustomFurnace extends BlockBase implements ITileEntityProvider
             else if (face == EnumFacing.EAST && south.isFullBlock() && !north.isFullBlock() face = EnumFacing.WEST;
             worldIn.setBlockState(pos, state.withProperty(FACING, face), 2);
         }
-
-
-
-
-
+    }
 }
