@@ -23,11 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efcc044e-45c2-4f94-b3b1-44260d64ad58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/GamarsMod/objects/blocks/machines/BlockCustomFurnace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamarsMod.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/GamarsMod.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GamarsMod.iws" beforeDir="false" afterPath="$PROJECT_DIR$/GamarsMod.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GamarsMod/init/BlockInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GamarsMod/init/BlockInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GamarsMod/util/Reference.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GamarsMod/util/Reference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GamarsMod/objects/blocks/machines/BlockCustomFurnace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GamarsMod/objects/blocks/machines/BlockCustomFurnace.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,10 +289,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610320128730" />
-    <state x="661" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1610340437492">
+    <state x="661" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1610505689034">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="661" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610340437492" />
+    <state x="661" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610505689034" />
     <state x="690" y="315" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1610339129248">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
