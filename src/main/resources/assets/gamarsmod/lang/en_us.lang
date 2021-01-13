@@ -56,6 +56,8 @@ tile.ancient_debris.name=Ancient Debris
 tile.netherite_block.name=Netherite Block
 tile.test_plant.name=Test Plant
 tile.light_block.name=Light Block
+tile.rejuvenator.name=Rejuvenator
+tile.stone_mug.name=Stone Mug
 
 //GUI
 itemGroup.gamarstab=Gamars Tab

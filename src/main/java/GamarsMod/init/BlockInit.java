@@ -2,6 +2,8 @@ package GamarsMod.init;
 
 // import GamarsMod.objects.blocks.machines.BlockCustomFurnace;
 import GamarsMod.objects.blocks.BlockBase;
+import GamarsMod.objects.blocks.custom.BlockRejuvenator;
+import GamarsMod.objects.blocks.custom.BlockStoneMug;
 import GamarsMod.objects.blocks.seeds.BlockTestSeed;
 import GamarsMod.util.Reference;
 import net.minecraft.block.Block;
@@ -30,6 +32,8 @@ public class BlockInit {
 
     //BLOCKS
     public static final Block LIGHT_BLOCK = null;
+    public static final Block REJUVENATOR = null;
+    public static final Block STONE_MUG = null;
 
     //SEEDS
     public static final Block TEST_PLANT = null;
@@ -51,6 +55,9 @@ public class BlockInit {
 
         //BLOCKS
         registerBlock(registry, new BlockBase("light_block", Material.GLASS, 8.0F, 8.0F, 2, "pickaxe").setLightLevel(1.0F));
+        registerBlock(registry, new BlockRejuvenator("rejuvenator", Material.PORTAL, 8.0F, 8.0F, 2, "pickaxe"));
+        registerBlock(registry, new BlockStoneMug("stone_mug", Material.ROCK, 8.0F, 8.0F, 1, "pickaxe"));
+
 
         //SEEDS
         registerBlock(registry, new BlockTestSeed("test_plant"));
