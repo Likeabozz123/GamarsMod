@@ -13,6 +13,7 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod.EventBusSubscriber
@@ -49,10 +50,7 @@ public class RegistryHandler {
 
     }
     public static void initRegisteries() {
-        Main.proxy.render();
-        SmeltingRecipes.init();
-        CraftingRecipes.init();
-        GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
+
     }
 
     public static void postInitRegister() {
