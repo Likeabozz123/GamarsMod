@@ -3,8 +3,11 @@ package GamarsMod.init;
 import GamarsMod.objects.blocks.BlockBase;
 import GamarsMod.objects.blocks.custom.BlockRejuvenator;
 import GamarsMod.objects.blocks.custom.BlockStoneMug;
+import GamarsMod.objects.blocks.machines.BlockCustomFurnace;
+import GamarsMod.objects.blocks.machines.TileEntityCustomFurnace;
 import GamarsMod.objects.blocks.seeds.BlockTestSeed;
 import GamarsMod.util.Reference;
+import GamarsMod.util.handlers.TileEntityHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -55,6 +58,8 @@ public class BlockInit {
         registerBlock(registry, new BlockBase("light_block", Material.GLASS, 8.0F, 8.0F, 2, "pickaxe").setLightLevel(1.0F));
         registerBlock(registry, new BlockRejuvenator("rejuvenator", Material.PORTAL, 8.0F, 8.0F, 2, "pickaxe"));
         registerBlock(registry, new BlockStoneMug("stone_mug", Material.ROCK, 8.0F, 8.0F, 1, "pickaxe"));
+        registerBlock(registry, new BlockCustomFurnace("custom_furnace", 8.0F, 8.0F, 2, "pickaxe"));
+
 
 
         //SEEDS
@@ -85,6 +90,9 @@ public class BlockInit {
     private static void registerBlock(IForgeRegistry<Block> registry, Block block) { // Make a helper method to reduce redundant code
         registry.register(block); // Register our block officially here
         BLOCKS.add(block); // Add the block to our registration list here so we can do their items soon
+
+        TileEntityHandler.registerTileEntities();
+
     }
 
 }

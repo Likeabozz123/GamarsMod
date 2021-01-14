@@ -34,6 +34,9 @@ public class ItemInit {
 
     //ITEMS
     public static final Item TEST_ITEM = null;
+    public static final Item SHATTERED_PEARL = null;
+    public static final Item ENDERITE_SHARD = null;
+    public static final Item CORRUPTED_PEARL = null;
 
     public static final Item TEST_TEST = null;
     public static final Item TEST_COAL = null;

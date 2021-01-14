@@ -16,6 +16,7 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -26,8 +27,7 @@ import net.minecraft.world.World;
 import java.util.Random;
 
 
-public abstract class BlockCustomFurnace extends BlockBase implements ITileEntityProvider
-{
+public class BlockCustomFurnace extends BlockBase {
 
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
     public static final PropertyBool BURNING = PropertyBool.create("burning");
@@ -97,11 +97,11 @@ public abstract class BlockCustomFurnace extends BlockBase implements ITileEntit
 
     }
 
-/*    @Override
+    @Override
     public TileEntity createTileEntity(World world, IBlockState state)
     {
         return new TileEntityCustomFurnace();
-    }*/
+    }
 
     @Override
     public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)
@@ -142,6 +142,11 @@ public abstract class BlockCustomFurnace extends BlockBase implements ITileEntit
         EnumFacing facing = EnumFacing.getFront(meta);
         if(facing.getAxis() == EnumFacing.Axis.Y) facing = EnumFacing.NORTH;
         return this.getDefaultState().withProperty(FACING, facing);
+    }
+
+    @Override
+    public int getMetaFromState(IBlockState state) {
+        return ((EnumFacing)state.getValue(FACING)).getIndex();
     }
 }
 
