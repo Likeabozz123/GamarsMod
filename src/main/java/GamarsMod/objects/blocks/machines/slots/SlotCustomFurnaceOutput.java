@@ -11,9 +11,9 @@ public class SlotCustomFurnaceOutput extends Slot
     private final EntityPlayer player;
     private int removeCount;
 
-    public SlotCustomFurnaceOutput(EntityPlayer player, TileEntityCustomFurnace tileetity, int i, int i1, int i2) {
+    public SlotCustomFurnaceOutput(EntityPlayer player, IInventory inventory, int index, int x, int y) {
         super(inventory, index, x, y);
-        this.player = this.player;
+        this.player = player;
     }
 
     @Override

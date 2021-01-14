@@ -50,11 +50,7 @@ public class RegistryHandler {
 
     }
     public static void initRegisteries() {
-        Main.proxy.render();
-        SmeltingRecipes.init();
-        CraftingRecipes.init();
-        GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);
-        NetworkRegistry.INSTANCE.registerGuiHandler(Main.instance, new GuiHandler());
+
     }
 
     public static void postInitRegister() {

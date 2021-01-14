@@ -4,8 +4,10 @@ import GamarsMod.objects.blocks.BlockBase;
 import GamarsMod.objects.blocks.custom.BlockRejuvenator;
 import GamarsMod.objects.blocks.custom.BlockStoneMug;
 import GamarsMod.objects.blocks.machines.BlockCustomFurnace;
+import GamarsMod.objects.blocks.machines.BlockTestCoalGen;
 import GamarsMod.objects.blocks.machines.TileEntityCustomFurnace;
 import GamarsMod.objects.blocks.seeds.BlockTestSeed;
+import GamarsMod.objects.tileentity.TileEntityTestCoalGen;
 import GamarsMod.util.Reference;
 import GamarsMod.util.handlers.TileEntityHandler;
 import net.minecraft.block.Block;
@@ -13,10 +15,12 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.ArrayList;
@@ -50,6 +54,9 @@ public class BlockInit {
 
     public static final Block CUSTOM_FURNACE = null;
 
+    public static final Block TEST_COAL_GENERATOR = null;
+    public static final Block LIT_TEST_COAL_GENERATOR = null;
+
     @SubscribeEvent // Tell forge the below method is an event handler
     public static void registerBlocks(final RegistryEvent.Register<Block> event) { // Handle the Registry event for Block objects.
         final IForgeRegistry<Block> registry = event.getRegistry(); // Store registry here to save redundant code
@@ -59,8 +66,6 @@ public class BlockInit {
         registerBlock(registry, new BlockRejuvenator("rejuvenator", Material.PORTAL, 8.0F, 8.0F, 2, "pickaxe"));
         registerBlock(registry, new BlockStoneMug("stone_mug", Material.ROCK, 8.0F, 8.0F, 1, "pickaxe"));
         registerBlock(registry, new BlockCustomFurnace("custom_furnace", 8.0F, 8.0F, 2, "pickaxe"));
-
-
 
         //SEEDS
         registerBlock(registry, new BlockTestSeed("test_plant"));
@@ -75,6 +80,13 @@ public class BlockInit {
         //MATERIAL BLOCKS
         registerBlock(registry, new BlockBase("netherite_block", Material.ROCK, 15.0F, 50.0F, 3, "pickaxe", true));
         registerBlock(registry, new BlockBase("test_block", Material.IRON, 8.0F, 8.0F, 2, "pickaxe", true));
+
+        registerBlock(registry, new BlockTestCoalGen("test_coal_generator", Material.IRON, 8.0F, 8.0F, 2, "pickaxe"));
+        registerBlock(registry, new BlockTestCoalGen("lit_test_coal_generator", Material.IRON, 8.0F, 8.0F, 2, "pickaxe").setCreativeTab(null));
+
+        GameRegistry.registerTileEntity(TileEntityTestCoalGen.class, new ResourceLocation(Reference.MOD_ID + ":test_coal_generator"));
+
+
     }
 
     @SubscribeEvent // Another event handler

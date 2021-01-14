@@ -2,9 +2,10 @@ package GamarsMod.util.handlers;
 
 import GamarsMod.objects.blocks.container.ContainerTestCoalGenerator;
 import GamarsMod.objects.blocks.gui.GuiTestCoalGenerator;
+import GamarsMod.objects.blocks.machines.ContainerCustomFurnace;
+import GamarsMod.objects.blocks.machines.GuiCustomFurnace;
+import GamarsMod.objects.blocks.machines.TileEntityCustomFurnace;
 import GamarsMod.objects.tileentity.TileEntityTestCoalGen;
-import jdk.nashorn.internal.ir.Block;
-import net.minecraft.client.gui.Gui;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.Container;
 import net.minecraft.util.math.BlockPos;
@@ -15,8 +16,8 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class GuiRegistry implements IGuiHandler {
 
-    public static final int GUI_BLOCK_CUSTOM_FURNACE = 0;
-    public static final int GUI_TEST_COAL_GENERATOR = 1;
+    public static final int GUI_BLOCK_CUSTOM_FURNACE = 1;
+    public static final int GUI_TEST_COAL_GENERATOR = 2;
 
     /**
      * gets the server's part of a Gui
@@ -29,6 +30,8 @@ public class GuiRegistry implements IGuiHandler {
             case GUI_TEST_COAL_GENERATOR:
                 // get container for gui
                 return new ContainerTestCoalGenerator(player.inventory, (TileEntityTestCoalGen)world.getTileEntity(new BlockPos(x, y, z)));
+            case GUI_BLOCK_CUSTOM_FURNACE:
+                return new ContainerCustomFurnace(player.inventory, (TileEntityCustomFurnace) world.getTileEntity(new BlockPos(x,y,z)));
             default:
                 return null;
         }
@@ -37,7 +40,7 @@ public class GuiRegistry implements IGuiHandler {
     /**
      * gets the client's part of a Gui
      *
-     * @return a {@link GuiScreen} for the client
+     * @return a {@link // GuiScreen} for the client
      */
     @Override
     @SideOnly(Side.CLIENT)
@@ -46,6 +49,8 @@ public class GuiRegistry implements IGuiHandler {
             case GUI_TEST_COAL_GENERATOR:
                 // get gui for gui
                 return new GuiTestCoalGenerator(player.inventory, (TileEntityTestCoalGen)world.getTileEntity(new BlockPos(x, y, z)));
+            case GUI_BLOCK_CUSTOM_FURNACE:
+                return new GuiCustomFurnace(player.inventory, (TileEntityCustomFurnace)world.getTileEntity(new BlockPos(x, y, z)));
             default:
                 return null;
         }

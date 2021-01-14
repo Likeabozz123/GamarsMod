@@ -86,8 +86,13 @@ tile.test_plant.name=Test Plant
 
 //MACHINES
 tile.rejuvenator.name=Rejuvenator
+tile.test_coal_generator.name=Test Coal Generator
+tile.lit_coal_test_generator.name=Test Coal Generator
 
 //GUI
 itemGroup.gamarstab=Gamars Tab
 
+//CONTAINER
 container.custom_furnace=Custom Furnace
+container.test_coal_generator=Test Coal Generator
+container.lit_test_coal_generator=Test Coal Generator
