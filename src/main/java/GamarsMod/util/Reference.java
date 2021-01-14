@@ -11,4 +11,5 @@ public class Reference {
     public static final String COMMON_PROXY_CLASS = "GamarsMod.proxy.CommonProxy";
 
     public static final int GUI_BLOCK_CUSTOM_FURNACE = 0;
+    public static final int GUI_TEST_COAL_GENERATOR = 1;
 }

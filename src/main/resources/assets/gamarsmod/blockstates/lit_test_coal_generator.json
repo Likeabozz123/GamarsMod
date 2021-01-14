@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "gamarsmod:lit_test_coal_generator" },
+        "facing=south": { "model": "gamarsmod:lit_test_coal_generator", "y": 180 },
+        "facing=west":  { "model": "gamarsmod:lit_test_coal_generator", "y": 270 },
+        "facing=east":  { "model": "gamarsmod:lit_test_coal_generator", "y": 90 }
+    }
+}
