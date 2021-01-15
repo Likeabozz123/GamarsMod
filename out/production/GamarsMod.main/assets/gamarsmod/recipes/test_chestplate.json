@@ -1,13 +1,24 @@
 {
-    "type": "minecraft:crafting_shapeless",
-    "ingredients": [{
-        "item": "gamarsmod:netherite_ingot"
-    },
-        {
-            "item": "minecraft:diamond_chestplate"
-        }
+    "type": "minecraft:crafting_shaped",
+
+    "pattern":
+    [
+        "# #",
+        "###",
+        "###"
     ],
-    "result": {
-        "item": "gamarsmod:netherite_chestplate"
+
+    "key":
+    {
+        "#":
+        {
+            "item": "gamarsmod:test_material"
+        }
+    },
+
+    "result":
+    {
+        "item":  "gamarsmod:test_chestplate",
+        "count": 1
     }
 }

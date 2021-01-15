@@ -23,8 +23,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efcc044e-45c2-4f94-b3b1-44260d64ad58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/GamarsMod/init/PotionInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/GamarsMod/objects/potions/CustomPotion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/gamarsmod/textures/gui/potion_effects.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GamarsMod.iws" beforeDir="false" afterPath="$PROJECT_DIR$/GamarsMod.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GamarsMod/objects/blocks/machines/BlockCustomFurnace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GamarsMod/objects/blocks/machines/BlockCustomFurnace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/init/BlockInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/init/BlockInit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/init/ItemInit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/init/ItemInit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/objects/armour/ArmourBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/objects/armour/ArmourBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/objects/blocks/BlockBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/objects/blocks/BlockBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/objects/items/ItemBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/objects/items/ItemBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/objects/tools/ToolAxe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/objects/tools/ToolHoe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/objects/tools/ToolPickaxe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/objects/tools/ToolShovel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/objects/tools/ToolSword.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/recipes/SmeltingRecipes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/recipes/SmeltingRecipes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/tabs/GamarsTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/tabs/GamarsTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/util/Reference.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/util/Reference.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/util/handlers/RegistryHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/GamarsMod/util/handlers/RegistryHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/lang/en_us.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/recipes/test_boots.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/recipes/test_boots.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/recipes/test_chestplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/recipes/test_chestplate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/recipes/test_helmet.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/recipes/test_helmet.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/recipes/test_leggings.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/recipes/test_leggings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/textures/blocks/test_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GamarsMod.main/assets/gamarsmod/textures/blocks/test_block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GamarsMod/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GamarsMod/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/gamarsmod/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/gamarsmod/lang/en_us.lang" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +133,9 @@
       <profile-state />
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -117,6 +144,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -126,19 +154,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/assets/gamarsmod/models/item" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="GamarsMod.objects" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="GamarsMod.objects" />
       <recent name="GamarsMod.objects.blocks" />
       <recent name="GamarsMod.objects.machines" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\xxbat\Desktop\GamarsMod\src\main\resources\assets\gamarsmod\models\item" />
       <recent name="C:\Users\xxbat\Desktop\GamarsMod\src\main\resources\assets\gamarsmod\recipes" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="GamarsMod.objects.potions" />
+      <recent name="GamarsMod.objects" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
@@ -282,6 +312,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -293,45 +324,45 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="661" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610505689034" />
-    <state x="690" y="315" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1610339129248">
+    <state x="690" y="315" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1610666844457">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="315" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610339129248" />
-    <state x="743" y="430" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1610339176524">
+    <state x="690" y="315" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610666844457" />
+    <state x="743" y="430" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1610670511273">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="743" y="430" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610339176524" />
-    <state x="756" y="446" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1610339259920">
+    <state x="743" y="430" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610670511273" />
+    <state x="756" y="446" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1610666813287">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="756" y="446" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610339259920" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1610331991363">
+    <state x="756" y="446" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610666813287" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1610673813795">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610331991363" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1610331991362">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610673813795" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1610673813795">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610331991362" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1610331991362">
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610673813795" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1610673813795">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610331991362" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1610331991362">
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610673813795" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1610673813795">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610331991362" />
-    <state x="449" y="178" key="SettingsEditor" timestamp="1610327361111">
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610673813795" />
+    <state x="449" y="178" key="SettingsEditor" timestamp="1610668289557">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="449" y="178" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610327361111" />
+    <state x="449" y="178" key="SettingsEditor/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610668289557" />
     <state x="667" y="139" width="585" height="801" key="find.popup" timestamp="1610257257443">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="667" y="139" width="585" height="801" key="find.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610257257443" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1610243118372">
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1610670610184">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610243118372" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1610670610184" />
   </component>
 </project>

@@ -1,23 +1,46 @@
 //ITEMS
 item.test_item.name=Test Item
-item.test_material.name=Test Material
-item.test_food.name=Test Food
+item.test_coal.name=Test Coal
+
 item.test_test.name=Test Test
-item.bonk_hammer.name=Bonk Hammer
+
+
+//FOODS
+item.test_food.name=Test Food
+item.test_seeds.name=Test Seeds
+item.test_wheat.name=Test Wheat
+
+//MATERIALS
+item.test_material.name=Test Material
+
 item.netherite_ingot.name=Netherite Ingot
 item.netherite_scrap.name=Netherite Scrap
+
 item.stacked_iron_ore.name=Stacked Iron Ore
+
+item.enderite_shard.name=Enderite Shard
+item.shattered_pearl.name=Shattered Pearl
+item.corrupted_pearl.name=Corrupted Pearl
 
 //ARMOUR
 item.test_helmet.name=Test Helmet
 item.test_chestplate.name=Test Chestplate
 item.test_leggings.name=Test Leggings
 item.test_boots.name=Test Boots
-item.reinforced_woolin_pants.name=Reinforced Woolin Pants
+
 item.netherite_helmet.name=Netherite Helmet
 item.netherite_chestplate.name=Netherite Chestplate
 item.netherite_leggings.name=Netherite Leggings
 item.netherite_boots.name=Netherite Boots
+
+item.enderite_helmet.name=Enderite Helmet
+item.enderite_chestplate.name=Enderite Chestplate
+item.enderite_leggings.name=Enderite Leggings
+item.enderite_boots.name=Enderite Boots
+
+item.reinforced_woolin_pants.name=Reinforced Woolin Pants
+
+item.light_helmet.name=Light Helmet
 
 //TOOLS
 item.test_sword.name=Test Sword
@@ -25,19 +48,58 @@ item.test_pickaxe.name=Test Pickaxe
 item.test_axe.name=Test Axe
 item.test_shovel.name=Test Shovel
 item.test_hoe.name=Test Hoe
+item.test_multitool.name=Test Multitool
+
+item.bonk_hammer.name=Bonk Hammer
+
 item.netherite_sword.name=Netherite Sword
-item.netherite_axe.name=Netherite Axe
 item.netherite_pickaxe.name=Netherite Pickaxe
+item.netherite_axe.name=Netherite Axe
 item.netherite_shovel.name=Netherite Shovel
 item.netherite_hoe.name=Netherite Hoe
 
+//STAVES
+item.test_staff.name=Test Staff
+
 //BLOCKS
-tile.test_block.name=Test Block
+tile.light_block.name=Light Block
+tile.stone_mug.name=Stone Mug
+
+//BLOCK OF MATERIALS
+tile.test_block.name=Block of Test
+tile.test_test_block.name=Block of Test Test
+tile.netherite_block.name=Block of Netherite
+
+//ORES
 tile.test_ore.name=Test Ore
-tile.test_test_block.name=Test Test Block
-tile.packed_wool.name=Packed Wool
 tile.ancient_debris.name=Ancient Debris
-tile.netherite_block.name=Netherite Block
+
+//MATERIAL
+
+//ITEMS
+
+BLOCKS
+tile.packed_wool.name=Packed Wool
+
+//CROPS
+tile.test_plant.name=Test Plant
+
+//MACHINES
+tile.rejuvenator.name=Rejuvenator
+tile.test_coal_generator.name=Test Coal Generator
+tile.lit_coal_test_generator.name=Test Coal Generator
 
 //GUI
 itemGroup.gamarstab=Gamars Tab
+
+//CONTAINER
+container.custom_furnace=Custom Furnace
+container.test_coal_generator=Test Coal Generator
+container.lit_test_coal_generator=Test Coal Generator
+
+//POTIONS
+effect.your_potion=Custom Potion
+potion.effect.your_potion=Custom Potion
+splash_potion.effect.your_potion=Custom Splash Potion
+lingering_potion.effect.your_potion=Custom Lingering Potion
+tipped_arrow.effect.your_potion=Arrow of Your Portion

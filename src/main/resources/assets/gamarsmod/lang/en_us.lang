@@ -99,3 +99,10 @@ container.custom_furnace=Custom Furnace
 container.sintering_furnace=Sintering Furnace
 container.test_coal_generator=Test Coal Generator
 container.lit_test_coal_generator=Test Coal Generator
+
+//POTIONS
+effect.your_potion=Custom Potion
+potion.effect.your_potion=Custom Potion
+splash_potion.effect.your_potion=Custom Splash Potion
+lingering_potion.effect.your_potion=Custom Lingering Potion
+tipped_arrow.effect.your_potion=Arrow of Your Portion
