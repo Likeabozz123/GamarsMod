@@ -1,5 +1,6 @@
 package GamarsMod;
 
+import GamarsMod.init.PotionInit;
 import GamarsMod.proxy.CommonProxy;
 import GamarsMod.recipes.CraftingRecipes;
 import GamarsMod.recipes.SmeltingRecipes;
@@ -8,6 +9,7 @@ import GamarsMod.util.Reference;
 import GamarsMod.util.handlers.GuiRegistry;
 import GamarsMod.util.handlers.RegistryHandler;
 import GamarsMod.world.gen.WorldGenOres;
+import com.google.common.eventbus.Subscribe;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -15,6 +17,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -33,6 +37,8 @@ public class Main {
     public void preInit(FMLPreInitializationEvent event) {
         // RegistryHandler.preInitRegisteries();
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiRegistry());
+
+        PotionInit.registerPotions();
     }
 
     @Mod.EventHandler
@@ -59,4 +65,28 @@ public class Main {
 
 
     }
+
+    @Mod.EventBusSubscriber
+    public static class WorldEvents{
+
+
+
+    //potion shit
+    @SubscribeEvent
+    public static void yourPotionActive(TickEvent.PlayerTickEvent event)
+    {
+        boolean isActive = false;
+        if(event.player.isPotionActive(PotionInit.YOUR_POTION_EFFECT)) isActive = true;
+
+        if(isActive)
+        {
+
+            //someone put code here, tutorial guy said so
+
+        }
+
+
+    }
+    }
+
 }

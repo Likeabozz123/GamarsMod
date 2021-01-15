@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gamarsmod:netherite_block"
+    }],
+  "result": {
+    "item": "gamarsmod:netherite_ingot",
+    "count": 9
+  }
+}

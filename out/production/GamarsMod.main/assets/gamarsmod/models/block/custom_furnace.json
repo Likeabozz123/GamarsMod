@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "gamarsmod:blocks/custom_furnace_top",
+        "front": "gamarsmod:blocks/custom_furnace_front_off",
+        "side": "gamarsmod:blocks/custom_furnace_side"
+    }
+}
