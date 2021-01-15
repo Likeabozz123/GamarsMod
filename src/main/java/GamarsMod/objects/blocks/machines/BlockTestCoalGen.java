@@ -6,6 +6,7 @@ import GamarsMod.objects.blocks.BlockBase;
 import GamarsMod.objects.energy.CustomEnergyStorage;
 import GamarsMod.objects.tileentity.TileEntityTestCoalGen;
 import GamarsMod.util.Reference;
+import GamarsMod.util.handlers.GuiRegistry;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -37,7 +38,7 @@ public class BlockTestCoalGen extends BlockBase {
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         if(!worldIn.isRemote) {
-            playerIn.openGui(Main.instance, Reference.GUI_TEST_COAL_GENERATOR, worldIn, pos.getX(), pos.getY(), pos.getZ());
+            playerIn.openGui(Main.instance, GuiRegistry.GUI_TEST_COAL_GENERATOR, worldIn, pos.getX(), pos.getY(), pos.getZ());
         }
         return true;
     }

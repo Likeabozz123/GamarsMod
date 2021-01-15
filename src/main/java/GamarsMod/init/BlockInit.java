@@ -3,9 +3,11 @@ package GamarsMod.init;
 import GamarsMod.objects.blocks.BlockBase;
 import GamarsMod.objects.blocks.custom.BlockRejuvenator;
 import GamarsMod.objects.blocks.custom.BlockStoneMug;
-import GamarsMod.objects.blocks.machines.BlockCustomFurnace;
+import GamarsMod.objects.blocks.custom.counter.BlockCounter;
+import GamarsMod.objects.blocks.custom.pedestal.BlockPedestal;
+import GamarsMod.objects.blocks.machines.customfurnace.BlockCustomFurnace;
 import GamarsMod.objects.blocks.machines.BlockTestCoalGen;
-import GamarsMod.objects.blocks.machines.TileEntityCustomFurnace;
+import GamarsMod.objects.blocks.machines.sinteringfurnace.BlockSinteringFurnace;
 import GamarsMod.objects.blocks.seeds.BlockTestSeed;
 import GamarsMod.objects.tileentity.TileEntityTestCoalGen;
 import GamarsMod.util.Reference;
@@ -52,10 +54,15 @@ public class BlockInit {
     public static final Block TEST_BLOCK = null;
     public static final Block NETHERITE_BLOCK = null;
 
+    public static final Block COUNTER = null;
+    public static final Block PEDESTAL = null;
+
     public static final Block CUSTOM_FURNACE = null;
 
     public static final Block TEST_COAL_GENERATOR = null;
     public static final Block LIT_TEST_COAL_GENERATOR = null;
+
+    public static final Block SINTERING_FURNACE = null;
 
     @SubscribeEvent // Tell forge the below method is an event handler
     public static void registerBlocks(final RegistryEvent.Register<Block> event) { // Handle the Registry event for Block objects.
@@ -81,11 +88,15 @@ public class BlockInit {
         registerBlock(registry, new BlockBase("netherite_block", Material.ROCK, 15.0F, 50.0F, 3, "pickaxe", true));
         registerBlock(registry, new BlockBase("test_block", Material.IRON, 8.0F, 8.0F, 2, "pickaxe", true));
 
+        registerBlock(registry, new BlockCounter("counter"));
+        registerBlock(registry, new BlockPedestal("pedestal"));
+
         registerBlock(registry, new BlockTestCoalGen("test_coal_generator", Material.IRON, 8.0F, 8.0F, 2, "pickaxe"));
         registerBlock(registry, new BlockTestCoalGen("lit_test_coal_generator", Material.IRON, 8.0F, 8.0F, 2, "pickaxe").setCreativeTab(null));
 
-        GameRegistry.registerTileEntity(TileEntityTestCoalGen.class, new ResourceLocation(Reference.MOD_ID + ":test_coal_generator"));
+        registerBlock(registry, new BlockSinteringFurnace("sintering_furnace"));
 
+        GameRegistry.registerTileEntity(TileEntityTestCoalGen.class, new ResourceLocation(Reference.MOD_ID + ":test_coal_generator"));
 
     }
 

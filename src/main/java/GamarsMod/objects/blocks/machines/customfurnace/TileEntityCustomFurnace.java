@@ -1,5 +1,6 @@
-package GamarsMod.objects.blocks.machines;
+package GamarsMod.objects.blocks.machines.customfurnace;
 
+import GamarsMod.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
@@ -33,14 +34,18 @@ public class TileEntityCustomFurnace extends TileEntity {
     @Override
     public boolean hasCapability(Capability<?> capability, EnumFacing facing)
     {
-        if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return true;
+        if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
+            return true;
+        }
         else return false;
     }
 
     @Override
     public <T> T getCapability(Capability<T> capability, EnumFacing facing)
     {
-        if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) return (T) this.handler;
+        if(capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)  {
+            return (T) this.handler;
+        }
         return super.getCapability(capability, facing);
     }
 
@@ -74,8 +79,7 @@ public class TileEntityCustomFurnace extends TileEntity {
     }
 
     @Override
-    public NBTTagCompound writeToNBT(NBTTagCompound compound)
-    {
+    public NBTTagCompound writeToNBT(NBTTagCompound compound) {
         super.writeToNBT(compound);
         compound.setInteger("BurnTime", (short)this.burnTime);
         compound.setInteger("CookTime", (short)this.cookTime);
@@ -191,7 +195,7 @@ public class TileEntityCustomFurnace extends TileEntity {
         {
             Item item = fuel.getItem();
 
-            if (item instanceof ItemBlock && Block.getBlockFromItem(item) != Blocks.AIR)
+/*            if (item instanceof ItemBlock && Block.getBlockFromItem(item) != Blocks.AIR)
             {
                 Block block = Block.getBlockFromItem(item);
 
@@ -207,7 +211,8 @@ public class TileEntityCustomFurnace extends TileEntity {
             if (item == Items.COAL) return 1600;
             if (item == Items.LAVA_BUCKET) return 20000;
             if (item == Item.getItemFromBlock(Blocks.SAPLING)) return 100;
-            if (item == Items.BLAZE_ROD) return 2400;
+            if (item == Items.BLAZE_ROD) return 2400;*/
+            if (item == ItemInit.ENDERITE_SHARD) return 2400;
 
             return GameRegistry.getFuelValue(fuel);
         }

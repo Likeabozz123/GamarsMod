@@ -1,10 +1,8 @@
-package GamarsMod.objects.blocks.machines;
+package GamarsMod.objects.blocks.machines.customfurnace;
 
-import GamarsMod.objects.blocks.machines.slots.SlotCustomFurnaceOutput;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
-import net.minecraft.inventory.ContainerRepair;
 import net.minecraft.inventory.IContainerListener;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
@@ -25,20 +23,22 @@ public class ContainerCustomFurnace extends Container {
         IItemHandler handler = tileentity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
 
         this.addSlotToContainer(new SlotItemHandler(handler, 0, 21, 36));
-        this.addSlotToContainer(new SlotItemHandler(handler, 0, 57, 36));
+        this.addSlotToContainer(new SlotItemHandler(handler, 1, 57, 36));
         this.addSlotToContainer(new SlotItemHandler(handler, 2, 114, 32));
         // this.addSlotToContainer(new SlotCustomFurnaceOutput(player.player, tileentity, 3, 81, 36));
-        this.addSlotToContainer(new SlotCustomFurnaceOutput(player.player, player.player.inventory, 3, 81, 36));
+        // this.addSlotToContainer(new SlotCustomFurnaceOutput(player.player, player.player.inventory, 3, 81, 36));
 
-        for(int y =0; y < 3; y++){
-            for(int x = 0; x < 9; x++){
-                this.addSlotToContainer(new Slot(player, x + y*9 + 9, 8 + x*18, 84 + y*18));
+        for(int y = 0; y < 3; y++) {
+            for(int x = 0; x < 9; x++)
+            {
+                this.addSlotToContainer(new Slot(player, x + y * 9 + 10, 9 + x * 18, 84 + y*18));
             }
         }
 
         for(int x = 0; x < 9; x++) {
             this.addSlotToContainer(new Slot(player, x, 8 + x * 18, 142));
         }
+
     }
 
     @Override
@@ -86,12 +86,12 @@ public class ContainerCustomFurnace extends Container {
             ItemStack stack1 = slot.getStack();
             stack = stack1.copy();
 
-            if(index == 3)
+            if(index == 2)
             {
-                if(!this.mergeItemStack(stack1, 4, 40, true)) return ItemStack.EMPTY;
+                if(!this.mergeItemStack(stack1, 3, 40, true)) return ItemStack.EMPTY;
                 slot.onSlotChange(stack1, stack);
             }
-            else if(index != 2 && index != 1 && index != 0)
+            else if(index != 1 && index != 0)
             {
                 Slot slot1 = (Slot)this.inventorySlots.get(index + 1);
 
@@ -103,27 +103,27 @@ public class ContainerCustomFurnace extends Container {
                     }
                     else if(TileEntityCustomFurnace.isItemFuel(stack1))
                     {
-                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
+                        if(!this.mergeItemStack(stack1, 1, 3, false)) return ItemStack.EMPTY;
                     }
                     else if(TileEntityCustomFurnace.isItemFuel(stack1))
                     {
-                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
+                        if(!this.mergeItemStack(stack1, 1, 3, false)) return ItemStack.EMPTY;
                     }
                     else if(TileEntityCustomFurnace.isItemFuel(stack1))
                     {
-                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
+                        if(!this.mergeItemStack(stack1, 1, 3, false)) return ItemStack.EMPTY;
                     }
                     else if(index >= 4 && index < 31)
                     {
-                        if(!this.mergeItemStack(stack1, 31, 40, false)) return ItemStack.EMPTY;
+                        if(!this.mergeItemStack(stack1, 30, 40, false)) return ItemStack.EMPTY;
                     }
-                    else if(index >= 31 && index < 40 && !this.mergeItemStack(stack1, 4, 31, false))
+                    else if(index >= 31 && index < 40 && !this.mergeItemStack(stack1, 3, 31, false))
                     {
                         return ItemStack.EMPTY;
                     }
                 }
             }
-            else if(!this.mergeItemStack(stack1, 4, 40, false))
+            else if(!this.mergeItemStack(stack1, 3, 40, false))
             {
                 return ItemStack.EMPTY;
             }

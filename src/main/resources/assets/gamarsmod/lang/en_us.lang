@@ -64,6 +64,7 @@ item.test_staff.name=Test Staff
 //BLOCKS
 tile.light_block.name=Light Block
 tile.stone_mug.name=Stone Mug
+tile.pedestal.name=Pedestal
 
 //BLOCK OF MATERIALS
 tile.test_block.name=Block of Test
@@ -88,11 +89,13 @@ tile.test_plant.name=Test Plant
 tile.rejuvenator.name=Rejuvenator
 tile.test_coal_generator.name=Test Coal Generator
 tile.lit_coal_test_generator.name=Test Coal Generator
+tile.counter.name=Counter
 
 //GUI
 itemGroup.gamarstab=Gamars Tab
 
 //CONTAINER
 container.custom_furnace=Custom Furnace
+container.sintering_furnace=Sintering Furnace
 container.test_coal_generator=Test Coal Generator
 container.lit_test_coal_generator=Test Coal Generator

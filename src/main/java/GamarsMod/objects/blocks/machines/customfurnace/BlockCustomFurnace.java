@@ -1,12 +1,11 @@
-package GamarsMod.objects.blocks.machines;
+package GamarsMod.objects.blocks.machines.customfurnace;
 
 import GamarsMod.Main;
 import GamarsMod.init.BlockInit;
 import GamarsMod.objects.blocks.BlockBase;
 import GamarsMod.util.Reference;
-import net.minecraft.block.Block;
+import GamarsMod.util.handlers.GuiRegistry;
 import net.minecraft.block.BlockHorizontal;
-import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
@@ -16,7 +15,6 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
@@ -57,7 +55,7 @@ public class BlockCustomFurnace extends BlockBase {
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
         if(!worldIn.isRemote)  {
-            playerIn.openGui(Main.instance, Reference.GUI_BLOCK_CUSTOM_FURNACE, worldIn, pos.getX(), pos.getY(), pos.getZ());
+            playerIn.openGui(Main.instance, GuiRegistry.GUI_BLOCK_CUSTOM_FURNACE, worldIn, pos.getX(), pos.getY(), pos.getZ());
         }
         return true;
     }
@@ -75,8 +73,8 @@ public class BlockCustomFurnace extends BlockBase {
 
             if (face == EnumFacing.NORTH && north.isFullBlock() && !south.isFullBlock()) face = EnumFacing.SOUTH;
             else if (face == EnumFacing.SOUTH && south.isFullBlock() && !north.isFullBlock()) face = EnumFacing.NORTH;
-            else if (face == EnumFacing.WEST && south.isFullBlock() && !north.isFullBlock()) face = EnumFacing.EAST;
-            else if (face == EnumFacing.EAST && south.isFullBlock() && !north.isFullBlock()) face = EnumFacing.WEST;
+            else if (face == EnumFacing.WEST && west.isFullBlock() && !east.isFullBlock()) face = EnumFacing.EAST;
+            else if (face == EnumFacing.EAST && east.isFullBlock() && !west.isFullBlock()) face = EnumFacing.WEST;
             worldIn.setBlockState(pos, state.withProperty(FACING, face), 2);
         }
     }
@@ -95,6 +93,11 @@ public class BlockCustomFurnace extends BlockBase {
             worldIn.setTileEntity(pos, tileentity);
         }
 
+    }
+
+    @Override
+    public boolean hasTileEntity(IBlockState state) {
+        return true;
     }
 
     @Override
@@ -127,8 +130,6 @@ public class BlockCustomFurnace extends BlockBase {
     @Override
     public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
         return state.withRotation(mirrorIn.toRotation((EnumFacing)state.getValue(FACING)));
-
-
     }
 
     @Override

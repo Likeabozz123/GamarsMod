@@ -1,6 +1,7 @@
 package GamarsMod.init;
 
 import GamarsMod.objects.armour.ArmourBase;
+import GamarsMod.objects.blocks.machines.customfurnace.CustomFurnaceFuel;
 import GamarsMod.objects.items.ItemBase;
 import GamarsMod.objects.items.MaterialTypes;
 import GamarsMod.objects.items.custom.ItemFuel;

@@ -1,6 +1,6 @@
 package GamarsMod.objects.blocks.machines.slots;
 
-import GamarsMod.objects.blocks.machines.TileEntityCustomFurnace;
+import GamarsMod.objects.blocks.machines.sinteringfurnace.TileEntitySinteringFurnace;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;

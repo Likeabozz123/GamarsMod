@@ -1,5 +1,7 @@
 package GamarsMod;
 
+import GamarsMod.objects.blocks.custom.pedestal.PacketRequestUpdatePedestal;
+import GamarsMod.objects.blocks.custom.pedestal.PacketUpdatePedestal;
 import GamarsMod.proxy.CommonProxy;
 import GamarsMod.recipes.CraftingRecipes;
 import GamarsMod.recipes.SmeltingRecipes;
@@ -16,7 +18,9 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
+import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
 
 @Mod(modid = Reference.MOD_ID, version = Reference.VERSION, name = Reference.MOD_NAME)
 public class Main {
@@ -29,17 +33,25 @@ public class Main {
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.COMMON_PROXY_CLASS)
     public static CommonProxy proxy;
 
+    public static SimpleNetworkWrapper network;
+
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         // RegistryHandler.preInitRegisteries();
+        proxy.registerRenderers();
+
         NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiRegistry());
+
+        network = NetworkRegistry.INSTANCE.newSimpleChannel(Reference.MOD_ID);
+        network.registerMessage(new PacketUpdatePedestal.Handler(), PacketUpdatePedestal.class, 0, Side.CLIENT);
+        network.registerMessage(new PacketRequestUpdatePedestal.Handler(), PacketRequestUpdatePedestal.class, 1, Side.SERVER);
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         // RegistryHandler.initRegisteries();
 
-        Main.proxy.render();
+        // Main.proxy.render();
         SmeltingRecipes.init();
         CraftingRecipes.init();
         GameRegistry.registerWorldGenerator(new WorldGenOres(), 0);

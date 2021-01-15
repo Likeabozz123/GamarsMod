@@ -1,4 +1,4 @@
-package GamarsMod.objects.blocks.machines;
+package GamarsMod.objects.blocks.machines.customfurnace;
 
 import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
