@@ -79,25 +79,19 @@ public class Main {
 
     @Mod.EventBusSubscriber
     public static class WorldEvents{
-
-
-
-    //potion shit
-    @SubscribeEvent
-    public static void yourPotionActive(TickEvent.PlayerTickEvent event)
-    {
-        boolean isActive = false;
-        if(event.player.isPotionActive(PotionInit.YOUR_POTION_EFFECT)) isActive = true;
-
-        if(isActive)
+        //potion shit
+        @SubscribeEvent
+        public static void yourPotionActive(TickEvent.PlayerTickEvent event)
         {
+            boolean isActive = false;
+            if(event.player.isPotionActive(PotionInit.CUSTOM_POTION_EFFECT)) isActive = true;
 
-            //someone put code here, tutorial guy said so
+            if(isActive)
+            {
+                //someone put code here, tutorial guy said so
+                System.out.println("has custom potion effect on rn");
 
+            }
         }
-
-
     }
-    }
-
 }

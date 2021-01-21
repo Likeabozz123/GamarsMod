@@ -43,7 +43,6 @@ public class BlockBase extends Block {
         setHarvestLevel(tool, miningLevel);
         setCreativeTab(Main.gamarsTab);
 
-        this.isDirectional = isDirectional;
         this.beaconBase = beaconBase;
 
     }

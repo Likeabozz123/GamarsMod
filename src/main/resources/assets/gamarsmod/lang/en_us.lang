@@ -106,3 +106,5 @@ potion.effect.your_potion=Custom Potion
 splash_potion.effect.your_potion=Custom Splash Potion
 lingering_potion.effect.your_potion=Custom Lingering Potion
 tipped_arrow.effect.your_potion=Arrow of Your Portion
+
+enchantment.custom_enchantment=Custom Enchantment
